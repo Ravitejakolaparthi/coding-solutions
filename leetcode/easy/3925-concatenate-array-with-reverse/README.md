@@ -55,9 +55,9 @@ The array remains the same when reversed. Thus, `ans = [1, 1]`.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.2 MB  
-**Submitted:** 2026-07-02T14:20:52.328Z  
+**Runtime:** 4 ms (beats 12.31%)  
+**Memory:** 30.8 MB (beats 33.12%)  
+**Submitted:** 2026-07-02T14:21:00.249Z  
 
 ```cpp
 class Solution {
