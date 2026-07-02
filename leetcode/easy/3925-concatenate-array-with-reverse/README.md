@@ -56,19 +56,19 @@ The array remains the same when reversed. Thus, `ans = [1, 1]`.
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8.1 MB  
-**Submitted:** 2026-07-02T14:19:46.942Z  
+**Memory:** 8.2 MB  
+**Submitted:** 2026-07-02T14:20:52.328Z  
 
 ```cpp
 class Solution {
 public:
     vector<int> concatWithReverse(vector<int>& nums) {
-        int n = 2*nums.size();
-        vector<int>v(n);
+       
+        vector<int>v;
         for(int i=0;i<nums.size();i++)
-        v.push_back(v[i]);
+        v.push_back(nums[i]);
         for(int i=nums.size()-1;i>=0;i--)
-        v.push_back(v[i]);
+        v.push_back(nums[i]);
         return v;   
     }
 };
