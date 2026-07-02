@@ -65,9 +65,9 @@ There is only one vertex and it has no edges connected to it. Thus, the answer i
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.5 MB  
-**Submitted:** 2026-07-02T14:13:54.631Z  
+**Runtime:** 4 ms (beats 38.28%)  
+**Memory:** 54.3 MB (beats 73.63%)  
+**Submitted:** 2026-07-02T14:14:11.008Z  
 
 ```cpp
 class Solution {
