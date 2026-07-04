@@ -45,8 +45,8 @@ Output: false
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8.4 MB  
-**Submitted:** 2026-07-04T12:04:05.810Z  
+**Memory:** 8.2 MB  
+**Submitted:** 2026-07-04T12:04:29.044Z  
 
 ```cpp
 /**
@@ -73,8 +73,9 @@ public:
         {
             bool left = isSameTree(p->left,q->left);
             bool right = isSameTree(q->right,p->right);
+            return left && right;
         }
-        return left && right;
+        
     }
 };
 ```
