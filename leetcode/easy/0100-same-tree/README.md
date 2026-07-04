@@ -45,8 +45,8 @@ Output: false
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8.5 MB  
-**Submitted:** 2026-07-04T12:02:36.259Z  
+**Memory:** 8.4 MB  
+**Submitted:** 2026-07-04T12:04:05.810Z  
 
 ```cpp
 /**
@@ -69,9 +69,12 @@ public:
         return false;
         if(p->val != q->val)
         return false;
-        
-        return isSameTree(p->left,q->left) && isSameTree(p->right,q->right);
-
+        else
+        {
+            bool left = isSameTree(p->left,q->left);
+            bool right = isSameTree(q->right,p->right);
+        }
+        return left && right;
     }
 };
 ```
