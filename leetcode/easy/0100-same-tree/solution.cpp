@@ -22,7 +22,8 @@ public:
         {
             bool left = isSameTree(p->left,q->left);
             bool right = isSameTree(q->right,p->right);
+            return left && right;
         }
-        return left && right;
+        
     }
 };
