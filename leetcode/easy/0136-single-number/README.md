@@ -40,8 +40,8 @@ You must implement a solution with a linear runtime complexity and use only co
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8.3 MB  
-**Submitted:** 2026-07-05T13:01:17.454Z  
+**Memory:** 8.4 MB  
+**Submitted:** 2026-07-05T13:02:18.632Z  
 
 ```cpp
 class Solution {
@@ -50,9 +50,9 @@ public:
         int n;
         sort(nums.begin(),nums.end());
         n = nums[0];
-        for(int i = 1;i<nums.size()-1;i++)
+        for(int i = 1;i<=nums.size()-1;i++)
         {
-            if(n == nums[i+1])
+            if(n == nums[i])
             n = nums[i+1];
         }
         return n;
