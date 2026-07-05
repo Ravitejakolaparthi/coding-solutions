@@ -12,11 +12,12 @@
 class Solution {
 public:
     bool isBalanced(TreeNode* root) {
-       int lh,rh;
+       
         if(root == nullptr)
         return 0;
         else
         {
+            int lh,rh;
             if(lh - rh >= -1 && lh - rh <= 1)
             return false;
             else
