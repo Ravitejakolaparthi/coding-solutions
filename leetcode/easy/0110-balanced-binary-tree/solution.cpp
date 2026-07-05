@@ -21,7 +21,7 @@ public:
             else{
                 lh = check(root -> left);
                 rh = check(root -> right);
-                if(lh == -1 || rh == -1 || abs(lh - rh) > 1)
+                if(lh <= -1 || rh >= -1 || abs(lh - rh) > 1)
                 {
                     flag = 1;
                 }
