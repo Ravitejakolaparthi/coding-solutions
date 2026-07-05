@@ -54,8 +54,8 @@ The maximum digit range is 9. Both integers have this digit range, so the answer
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8.1 MB  
-**Submitted:** 2026-07-05T02:38:55.855Z  
+**Memory:** 8.2 MB  
+**Submitted:** 2026-07-05T02:40:21.353Z  
 
 ```cpp
 class Solution {
@@ -70,7 +70,9 @@ public:
              {
                 rem = n%10;
                 s = min(s,rem);
+                 cout << s <<endl;
                 l = max(s,rem);
+                 cout << l <<endl;
                 n = n/10; 
              }
         int r = l-s;
