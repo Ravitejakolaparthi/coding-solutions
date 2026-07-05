@@ -2,6 +2,7 @@ class Solution {
 public:
     int singleNumber(vector<int>& nums) {
         int n;
+        sort(nums.begin(),nums.end());
         n = nums[0];
         for(int i = 0;i<nums.size()-1;i++)
         {
