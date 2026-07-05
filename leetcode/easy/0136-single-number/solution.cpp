@@ -7,6 +7,8 @@ public:
         {
             if(n == nums[i]);
             n = nums[i+1];
+            
+            cout << n;
         }
         return n;
 
