@@ -22,22 +22,12 @@ public:
     
     int maxDigitRange(vector<int>& nums) {
         vector<int>v(nums.size());
-        int m = -1;
         for(int i = 0;i<nums.size();i++)
             {
                 v[i] = rangeof(nums[i]);  
-                m = max(m,v[i]);
             }
-            int sum = 0;
-            for(int i = 0;i<nums.size();i++)
-                {
-                    if(v[i] == m)
-                    {
-                        sum+=nums[i];
-                    }
-                }
-           
-        
-        return sum;
+            for(int i = 0;i<v.size();i++)
+                cout << v[i];
+        return 1;
     }
 };
