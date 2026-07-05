@@ -10,7 +10,9 @@ public:
              {
                 rem = n%10;
                 s = min(s,rem);
+                 cout << s <<endl;
                 l = max(s,rem);
+                 cout << l <<endl;
                 n = n/10; 
              }
         int r = l-s;
