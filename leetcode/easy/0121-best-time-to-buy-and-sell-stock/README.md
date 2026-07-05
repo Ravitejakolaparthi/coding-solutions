@@ -42,8 +42,8 @@ Explanation: In this case, no transactions are done and the max profit = 0.
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8.3 MB  
-**Submitted:** 2026-07-05T07:16:55.584Z  
+**Memory:** 8.1 MB  
+**Submitted:** 2026-07-05T07:19:22.352Z  
 
 ```cpp
 class Solution {
@@ -55,9 +55,13 @@ public:
        {
             bsell[i] = min(bsell[i-1],prices[i]);
        }
-       for(int i = 0;i<prices.size();i++)
-       cout<< bsell[i];
-       return 0;
+      int sum = 0;
+      for(int i = 0;i<bsell.size();i++)
+      {
+         sum = max(sum,abs(prices[i]-bsell[i]));
+      }
+      
+       return sum;
     }
 };
 ```
