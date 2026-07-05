@@ -10,9 +10,9 @@ public:
              {
                 rem = n%10;
                 s = min(s,rem);
-                 // cout << s <<endl;
+                 cout << s <<endl;
                 l = max(l,rem);
-                 // cout << l <<endl;
+                 cout << l <<endl;
                 n = n/10; 
              }
         int r = l-s;
@@ -22,15 +22,12 @@ public:
     
     int maxDigitRange(vector<int>& nums) {
         vector<int>v(nums.size());
-        int m = -1;
         for(int i = 0;i<nums.size();i++)
             {
                 v[i] = rangeof(nums[i]);  
-                m = max(m,v[i]);
             }
-            cout << m;
-           
-        
+            for(int i = 0;i<v.size();i++)
+                cout << v[i];
         return 1;
     }
 };
