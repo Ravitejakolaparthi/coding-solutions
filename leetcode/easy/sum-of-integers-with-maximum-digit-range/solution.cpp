@@ -9,8 +9,8 @@ public:
          while(n>0)
              {
                 rem = n%10;
-                s = min(s,n);
-                l = max(s,n);
+                s = min(s,rem);
+                l = max(s,rem);
                 n = n/10; 
              }
         int r = l-s;
