@@ -43,8 +43,8 @@ Output: true
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8.1 MB  
-**Submitted:** 2026-07-05T04:07:59.971Z  
+**Memory:** 8.2 MB  
+**Submitted:** 2026-07-05T04:15:27.694Z  
 
 ```cpp
 /**
@@ -66,16 +66,17 @@ public:
         return 0;
         else
         {
-            
-            
-            if(h<= -1 && h>= 1)
+            int lh,rh;
+            if(lh - rh >= -1 && lh - rh <= 1)
             return false;
             else
             {
-            h = max(isBalanced(root->left),isBalanced(root->right))+1;
-            return h;
+             lh = isBalanced(root -> left)+1;
+             rh = isBalanced(root -> right)+1;
             }
+
         }
+        return true;
     }
 };
 ```
