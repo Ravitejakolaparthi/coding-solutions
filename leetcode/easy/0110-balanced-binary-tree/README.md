@@ -43,8 +43,8 @@ Output: true
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8.2 MB  
-**Submitted:** 2026-07-05T04:15:57.613Z  
+**Memory:** 8.3 MB  
+**Submitted:** 2026-07-05T04:20:56.398Z  
 
 ```cpp
 /**
@@ -61,22 +61,17 @@ Output: true
 class Solution {
 public:
     bool isBalanced(TreeNode* root) {
-       
+       int lh,rh;
         if(root == nullptr)
         return 0;
+        if(lh - rh >= -1 && lh - rh <= 1)
+        return false;
         else
         {
-            int lh,rh;
-            if(lh - rh >= -1 && lh - rh <= 1)
-            return false;
-            else
-            {
-             lh = isBalanced(root -> left)+1;
-             rh = isBalanced(root -> right)+1;
-            }
-            return true;
-        }
-        
+         lh = isBalanced(root -> left)+1;
+         rh = isBalanced(root -> right)+1;
+         }
+        return true;
     }
 };
 ```
