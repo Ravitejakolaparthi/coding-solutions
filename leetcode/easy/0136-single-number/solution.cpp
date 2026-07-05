@@ -4,7 +4,7 @@ public:
         int n;
         sort(nums.begin(),nums.end());
         n = nums[0];
-        for(int i = 0;i<nums.size()-1;i++)
+        for(int i = 1;i<nums.size()-1;i++)
         {
             if(n == nums[i+1])
             n = nums[i+1];
