@@ -54,8 +54,8 @@ The maximum digit range is 9. Both integers have this digit range, so the answer
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 31.8 MB (beats 0.00%)  
-**Submitted:** 2026-07-05T02:45:48.428Z  
+**Memory:** 31.5 MB (beats 28.57%)  
+**Submitted:** 2026-07-05T02:46:21.734Z  
 
 ```cpp
 class Solution {
