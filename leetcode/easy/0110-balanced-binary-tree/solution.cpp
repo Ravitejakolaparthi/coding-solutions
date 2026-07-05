@@ -17,6 +17,7 @@ public:
         else
         {
             int h = isBalanced(root->left) - isBalanced(root->right);
+            cout << h <<endl;
             if(h<= -1 && h>= 1)
             return false;
             else
