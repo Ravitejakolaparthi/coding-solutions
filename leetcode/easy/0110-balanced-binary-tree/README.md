@@ -44,7 +44,7 @@ Output: true
 **Language:** C++  
 **Runtime:** 0 ms  
 **Memory:** 8.1 MB  
-**Submitted:** 2026-07-05T04:00:28.469Z  
+**Submitted:** 2026-07-05T04:07:59.971Z  
 
 ```cpp
 /**
@@ -61,17 +61,20 @@ Output: true
 class Solution {
 public:
     bool isBalanced(TreeNode* root) {
+        int h = 0;
         if(root == nullptr)
         return 0;
         else
         {
-            int h = isBalanced(root->left) - isBalanced(root->right);
-            cout << h <<endl;
+            
+            
             if(h<= -1 && h>= 1)
             return false;
             else
-            return max(isBalanced(root->left),isBalanced(root->right))+1;
-            
+            {
+            h = max(isBalanced(root->left),isBalanced(root->right))+1;
+            return h;
+            }
         }
     }
 };
