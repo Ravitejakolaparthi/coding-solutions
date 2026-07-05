@@ -41,7 +41,7 @@ You must implement a solution with a linear runtime complexity and use only co
 **Language:** C++  
 **Runtime:** 0 ms  
 **Memory:** 8.2 MB  
-**Submitted:** 2026-07-05T07:27:04.101Z  
+**Submitted:** 2026-07-05T07:34:20.858Z  
 
 ```cpp
 class Solution {
@@ -53,6 +53,8 @@ public:
         {
             if(n == nums[i]);
             n = nums[i+1];
+            
+            cout << n;
         }
         return n;
 
