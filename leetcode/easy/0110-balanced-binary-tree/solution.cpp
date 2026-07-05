@@ -20,8 +20,8 @@ public:
          lh = isBalanced(root -> left)+1;
          rh = isBalanced(root -> right)+1;
          if(lh - rh >= -1 && lh - rh <= 1)
-         return false;
+         return 0;
         }    
-        return true;
+        return 1;
     }
 };
