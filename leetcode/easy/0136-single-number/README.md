@@ -40,8 +40,8 @@ You must implement a solution with a linear runtime complexity and use only co
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8.1 MB  
-**Submitted:** 2026-07-05T07:35:32.896Z  
+**Memory:** 8.2 MB  
+**Submitted:** 2026-07-05T07:36:52.887Z  
 
 ```cpp
 class Solution {
@@ -49,13 +49,10 @@ public:
     int singleNumber(vector<int>& nums) {
         int n;
         n = nums[0];
-        cout << n;
         for(int i = 1;i<nums.size()-1;i++)
         {
-            if(n == nums[i]);
+            if(n == nums[i])
             n = nums[i+1];
-
-            cout << n;
         }
         return n;
 
