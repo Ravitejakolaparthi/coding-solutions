@@ -41,24 +41,24 @@ Explanation: In this case, no transactions are done and the max profit = 0.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.1 MB  
-**Submitted:** 2026-07-05T07:20:56.734Z  
+**Runtime:** 5 ms (beats 8.28%)  
+**Memory:** 101.2 MB (beats 5.15%)  
+**Submitted:** 2026-07-05T07:19:29.052Z  
 
 ```cpp
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
-       vector<int> bbuy(prices.size());
-       bbuy[0] = prices[0];
+       vector<int> bsell(prices.size());
+       bsell[0] = prices[0];
        for(int i = 1;i<prices.size();i++)
        {
-            bbuy[i] = min(bbuy[i-1],prices[i]);
+            bsell[i] = min(bsell[i-1],prices[i]);
        }
       int sum = 0;
-      for(int i = 0;i<bbuy.size();i++)
+      for(int i = 0;i<bsell.size();i++)
       {
-         sum = max(sum,abs(prices[i]-bbuy[i]));
+         sum = max(sum,abs(prices[i]-bsell[i]));
       }
       
        return sum;
