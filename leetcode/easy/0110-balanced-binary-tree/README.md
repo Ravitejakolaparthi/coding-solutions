@@ -43,8 +43,8 @@ Output: true
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8.2 MB  
-**Submitted:** 2026-07-05T05:50:44.484Z  
+**Memory:** 8 MB  
+**Submitted:** 2026-07-05T05:51:00.196Z  
 
 ```cpp
 /**
@@ -81,7 +81,7 @@ public:
             return max(lh,rh)+1;
     }
     bool isBalanced(TreeNode* root) {
-      return check(root);
+      return check(root) != -1;
     }
 };
 ```
