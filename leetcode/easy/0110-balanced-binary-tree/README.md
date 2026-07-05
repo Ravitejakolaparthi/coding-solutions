@@ -43,8 +43,8 @@ Output: true
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8 MB  
-**Submitted:** 2026-07-05T05:51:00.196Z  
+**Memory:** 8.2 MB  
+**Submitted:** 2026-07-05T05:51:40.837Z  
 
 ```cpp
 /**
@@ -70,7 +70,7 @@ public:
             else{
                 lh = check(root -> left);
                 rh = check(root -> right);
-                if(lh <= -1 || rh >= -1 || abs(lh - rh) > 1)
+                if(lh == -1 || rh == -1 || abs(lh - rh) > 1)
                 {
                     flag = 1;
                 }
