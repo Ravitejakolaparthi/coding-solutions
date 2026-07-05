@@ -40,14 +40,15 @@ You must implement a solution with a linear runtime complexity and use only co
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8.3 MB  
-**Submitted:** 2026-07-05T12:48:35.946Z  
+**Memory:** 8.2 MB  
+**Submitted:** 2026-07-05T12:56:30.855Z  
 
 ```cpp
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
         int n;
+        sort(nums.begin(),nums.end());
         n = nums[0];
         for(int i = 0;i<nums.size()-1;i++)
         {
