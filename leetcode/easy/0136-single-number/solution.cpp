@@ -3,11 +3,12 @@ public:
     int singleNumber(vector<int>& nums) {
         int n;
         n = nums[0];
+        cout << n;
         for(int i = 1;i<nums.size()-1;i++)
         {
             if(n == nums[i]);
             n = nums[i+1];
-            
+
             cout << n;
         }
         return n;
