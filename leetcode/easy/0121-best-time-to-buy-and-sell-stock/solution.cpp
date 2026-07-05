@@ -7,8 +7,12 @@ public:
        {
             bsell[i] = min(bsell[i-1],prices[i]);
        }
-       for(int i = 0;i<prices.size();i++)
-       cout<< bsell[i];
-       return 0;
+      int sum = 0;
+      for(int i = 0;i<bsell.size();i++)
+      {
+         sum = max(sum,abs(prices[i]-bsell[i]));
+      }
+      
+       return sum;
     }
 };
