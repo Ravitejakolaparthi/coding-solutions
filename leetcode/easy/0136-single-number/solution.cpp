@@ -6,7 +6,7 @@ public:
         n = nums[0];
         for(int i = 1;i<nums.size()-1;i++)
         {
-            if(n == nums[i+1])
+            if(n == nums[i])
             n = nums[i+1];
         }
         return n;
