@@ -40,8 +40,8 @@ You must implement a solution with a linear runtime complexity and use only co
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8.4 MB  
-**Submitted:** 2026-07-06T04:27:10.085Z  
+**Memory:** 8.1 MB  
+**Submitted:** 2026-07-06T04:31:27.791Z  
 
 ```cpp
 class Solution {
@@ -57,7 +57,8 @@ public:
                  if(i != nums.size())
                  {
                  f = 1;
-                 n = nums[i];
+                 n = nums[i-1];
+                 cout << n <<endl;
                  }
               }
              
@@ -66,7 +67,6 @@ public:
         {
             n = nums[nums.size()-1];
         }
-
         return n;
 
     }
