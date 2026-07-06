@@ -1,14 +1,23 @@
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
-        int n;
+        int n = nums[0];
+        int f = 0;
         sort(nums.begin(),nums.end());
-        n = nums[0];
-        for(int i = 1;i<nums.size()-1;i++)
+        for(int i = 1;i<nums.size()-1;i+=2)
         {
-            if(n == nums[i])
-            n = nums[i+1];
+              if(nums[i-1]^nums[i] != 0)
+              {
+                f = 1;
+                 n = nums[i];
+              }
+             
         }
+        if(f == 0)
+        {
+            n = nums[nums.size()-1];
+        }
+
         return n;
 
     }
