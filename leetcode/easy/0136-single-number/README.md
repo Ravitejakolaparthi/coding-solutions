@@ -40,8 +40,8 @@ You must implement a solution with a linear runtime complexity and use only co
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8.3 MB  
-**Submitted:** 2026-07-06T04:24:15.232Z  
+**Memory:** 8.4 MB  
+**Submitted:** 2026-07-06T04:27:10.085Z  
 
 ```cpp
 class Solution {
@@ -54,8 +54,11 @@ public:
         {
               if(nums[i-1]^nums[i] != 0)
               {
-                f = 1;
+                 if(i != nums.size())
+                 {
+                 f = 1;
                  n = nums[i];
+                 }
               }
              
         }
