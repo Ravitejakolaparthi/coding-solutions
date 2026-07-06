@@ -4,16 +4,12 @@ public:
         int n = nums[0];
         int f = 0;
         sort(nums.begin(),nums.end());
-        for(int i = 1;i<nums.size()-1;i+=2)
+        for(int i = 1;i<nums.size();i+=2)
         {
               if(nums[i-1]^nums[i] != 0)
               {
-                 if(i != nums.size())
-                 {
-                 f = 1;
-                 n = nums[i-1];
-                 cout << n <<endl;
-                 }
+                f = 1;
+                 n = nums[i];
               }
              
         }
@@ -21,6 +17,7 @@ public:
         {
             n = nums[nums.size()-1];
         }
+
         return n;
 
     }
