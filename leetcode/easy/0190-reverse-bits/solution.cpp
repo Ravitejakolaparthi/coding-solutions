@@ -9,7 +9,7 @@ public:
                 r <<= 1;
                 b = n&1;
                 r |=b;
-                n >> 1;
+                n >>= 1;
         }
         return r;
     }
