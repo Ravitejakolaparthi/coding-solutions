@@ -46,9 +46,9 @@ Integer	Binary
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 8.3 MB (beats 14.01%)  
-**Submitted:** 2026-07-06T09:50:13.524Z  
+**Runtime:** 0 ms  
+**Memory:** 7.8 MB  
+**Submitted:** 2026-07-06T09:44:17.175Z  
 
 ```cpp
 class Solution {
