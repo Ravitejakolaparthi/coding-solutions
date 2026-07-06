@@ -46,9 +46,9 @@ Integer	Binary
 ## Solution
 
 **Language:** C++  
-**Runtime:** 2 ms  
-**Memory:** 7.9 MB  
-**Submitted:** 2026-07-06T09:42:46.232Z  
+**Runtime:** 0 ms  
+**Memory:** 7.7 MB  
+**Submitted:** 2026-07-06T09:43:33.550Z  
 
 ```cpp
 class Solution {
@@ -62,7 +62,7 @@ public:
                 r << 1;
                 b = n&1;
                 r |=b;
-                r >> 1;
+                n >> 1;
         }
         return r;
     }
