@@ -11,7 +11,8 @@ public:
                  if(i != nums.size())
                  {
                  f = 1;
-                 n = nums[i];
+                 n = nums[i-1];
+                 cout << n <<endl;
                  }
               }
              
@@ -20,7 +21,6 @@ public:
         {
             n = nums[nums.size()-1];
         }
-
         return n;
 
     }
