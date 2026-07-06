@@ -41,20 +41,29 @@ You must implement a solution with a linear runtime complexity and use only co
 **Language:** C++  
 **Runtime:** 0 ms  
 **Memory:** 8.2 MB  
-**Submitted:** 2026-07-05T13:03:03.828Z  
+**Submitted:** 2026-07-06T04:24:02.236Z  
 
 ```cpp
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
-        int n;
+        int n = nums[0];
+        int f = 0;
         sort(nums.begin(),nums.end());
-        n = nums[0];
-        for(int i = 1;i<nums.size()-1;i++)
+        for(int i = 1;i<nums.size()-1;i+=2)
         {
-            if(n == nums[i])
-            n = nums[i+1];
+              if(nums[i-1]^nums[i] != 0)
+              {
+                f = 1;
+                 n = nums[i];
+              }
+             
         }
+        if(f == 0)
+        {
+            n = nums[nums.size()-1];
+        }
+
         return n;
 
     }
