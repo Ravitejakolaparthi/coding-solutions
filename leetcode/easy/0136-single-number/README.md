@@ -40,8 +40,8 @@ You must implement a solution with a linear runtime complexity and use only co
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8.2 MB  
-**Submitted:** 2026-07-06T04:24:02.236Z  
+**Memory:** 8.3 MB  
+**Submitted:** 2026-07-06T04:24:15.232Z  
 
 ```cpp
 class Solution {
