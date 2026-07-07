@@ -51,8 +51,8 @@ Given the `root` of a binary tree, return  *the inorder traversal of its nodes' 
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8.3 MB  
-**Submitted:** 2026-07-07T09:31:34.638Z  
+**Memory:** 8.2 MB  
+**Submitted:** 2026-07-07T09:42:37.613Z  
 
 ```cpp
 /**
@@ -68,15 +68,21 @@ Given the `root` of a binary tree, return  *the inorder traversal of its nodes' 
  */
 class Solution {
 public:
+    void vectorin(TreeNode*root,vector<int>&v)
+        {
+            if(root!=nullptr)
+            {
+                vectorin(root->left,v);
+                v.push_back(root->val);
+                vectorin(root->right,v);
+            }
+        }
     vector<int> inorderTraversal(TreeNode* root) {
         vector<int>v;
-        if(root != nullptr)
-        {
-            inorderTraversal(root ->left);
-            cout << root->val;
-            inorderTraversal(root ->right);
-        }
+        TreeNode*temp = root;
+        vectorin(temp,v);
         return v;
+
     }
 };
 ```
