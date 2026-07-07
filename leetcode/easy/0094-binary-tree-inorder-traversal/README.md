@@ -51,8 +51,8 @@ Given the `root` of a binary tree, return  *the inorder traversal of its nodes' 
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8.3 MB  
-**Submitted:** 2026-07-07T09:23:44.052Z  
+**Memory:** 8.4 MB  
+**Submitted:** 2026-07-07T09:24:12.520Z  
 
 ```cpp
 /**
@@ -73,7 +73,7 @@ public:
         if(root != nullptr)
         {
             inorderTraversal(root ->left);
-            cout << root->val;
+            v.push_back(root->val);
             inorderTraversal(root ->right);
         }
         return v;
