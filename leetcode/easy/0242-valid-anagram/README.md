@@ -35,14 +35,16 @@ Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `f
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 7.6 MB  
-**Submitted:** 2026-07-07T09:14:04.461Z  
+**Memory:** 7.8 MB  
+**Submitted:** 2026-07-07T09:17:15.622Z  
 
 ```cpp
 class Solution {
 public:
     bool isAnagram(string s, string t) {
         char m = 0;
+        if(t.size()-s.size() != 0)
+        return false;
         for(int i = 0;i<s.size();i++)
         {
             m^= s[i];
