@@ -16,7 +16,7 @@ public:
         if(root != nullptr)
         {
             inorderTraversal(root ->left);
-            v.push_back(root->val);
+            cout << root->val;
             inorderTraversal(root ->right);
         }
         return v;
