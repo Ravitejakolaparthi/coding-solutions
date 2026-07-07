@@ -46,9 +46,9 @@ Return an integer representing the value of `x * sum`.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8 MB  
-**Submitted:** 2026-07-07T09:04:08.994Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 9.1 MB (beats 51.79%)  
+**Submitted:** 2026-07-07T09:04:15.273Z  
 
 ```cpp
 class Solution {
