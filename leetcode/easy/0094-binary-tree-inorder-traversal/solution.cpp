@@ -11,14 +11,20 @@
  */
 class Solution {
 public:
+    void vectorin(TreeNode*root,vector<int>&v)
+        {
+            if(root!=nullptr)
+            {
+                vectorin(root->left,v);
+                v.push_back(root->val);
+                vectorin(root->right,v);
+            }
+        }
     vector<int> inorderTraversal(TreeNode* root) {
         vector<int>v;
-        if(root != nullptr)
-        {
-            inorderTraversal(root ->left);
-            cout << root->val;
-            inorderTraversal(root ->right);
-        }
+        TreeNode*temp = root;
+        vectorin(temp,v);
         return v;
+
     }
 };
