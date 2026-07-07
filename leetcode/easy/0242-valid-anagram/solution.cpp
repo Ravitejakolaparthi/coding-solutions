@@ -2,6 +2,8 @@ class Solution {
 public:
     bool isAnagram(string s, string t) {
         char m = 0;
+        if(t.size()-s.size() != 0)
+        return false;
         for(int i = 0;i<s.size();i++)
         {
             m^= s[i];
