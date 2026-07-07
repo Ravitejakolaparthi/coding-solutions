@@ -35,8 +35,8 @@ Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `f
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 7.8 MB  
-**Submitted:** 2026-07-07T09:13:16.521Z  
+**Memory:** 7.6 MB  
+**Submitted:** 2026-07-07T09:14:04.461Z  
 
 ```cpp
 class Solution {
@@ -46,6 +46,10 @@ public:
         for(int i = 0;i<s.size();i++)
         {
             m^= s[i];
+           
+        }
+        for(int i = 0;i<t.size();i++)
+        {
             m^=t[i];
         }
         if(m == 0)
