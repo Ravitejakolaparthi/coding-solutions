@@ -61,9 +61,9 @@ Given an array `nums` containing `n` distinct numbers in the range `[0, n]`, ret
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8 MB  
-**Submitted:** 2026-07-08T01:33:44.838Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 21.9 MB (beats 12.85%)  
+**Submitted:** 2026-07-08T01:33:50.636Z  
 
 ```cpp
 class Solution {
