@@ -35,8 +35,8 @@ Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `f
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 7.7 MB  
-**Submitted:** 2026-07-09T00:45:56.866Z  
+**Memory:** 7.9 MB  
+**Submitted:** 2026-07-09T00:47:23.089Z  
 
 ```cpp
 class Solution {
@@ -44,6 +44,8 @@ public:
     bool isAnagram(string s, string t) {
             sort(s.begin(),s.end());
             sort(t.begin(),t.end());
+            if(s.size()!=t.size())
+            return false;
             for(int i = 0;i<s.size();i++)
             {
                 if(s[i]!=t[i])
