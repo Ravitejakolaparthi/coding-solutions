@@ -34,9 +34,9 @@ Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `f
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 7.9 MB  
-**Submitted:** 2026-07-09T00:47:23.089Z  
+**Runtime:** 8 ms (beats 7.13%)  
+**Memory:** 9.8 MB (beats 49.68%)  
+**Submitted:** 2026-07-09T00:47:31.747Z  
 
 ```cpp
 class Solution {
