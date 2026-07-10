@@ -44,8 +44,8 @@ public:
         return m;
     }
     int diameterOfBinaryTree(TreeNode* root) {
-    int c = 0; 
-     c = Traverse(root,0); 
-     return c;
+     
+     
+     return Traverse(root,0); 
     }
 };
