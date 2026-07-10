@@ -47,8 +47,8 @@ Output: [8,9,9,9,0,0,0,1]
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 77.2 MB (beats 12.73%)  
-**Submitted:** 2026-07-10T01:54:38.990Z  
+**Memory:** 77.1 MB (beats 45.52%)  
+**Submitted:** 2026-07-10T01:54:51.166Z  
 
 ```cpp
 /**
