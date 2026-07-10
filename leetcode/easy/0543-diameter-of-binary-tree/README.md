@@ -39,9 +39,9 @@ Output: 1
 ## Solution
 
 **Language:** C++  
-**Runtime:** 339 ms (beats 5.09%)  
-**Memory:** 23.7 MB (beats 42.44%)  
-**Submitted:** 2026-07-10T09:48:07.069Z  
+**Runtime:** 316 ms (beats 5.09%)  
+**Memory:** 23.8 MB (beats 42.44%)  
+**Submitted:** 2026-07-10T09:52:53.178Z  
 
 ```cpp
 /**
@@ -90,9 +90,9 @@ public:
         return m;
     }
     int diameterOfBinaryTree(TreeNode* root) {
-    int c = 0; 
-     c = Traverse(root,0); 
-     return c;
+     
+     
+     return Traverse(root,0); 
     }
 };
 ```
