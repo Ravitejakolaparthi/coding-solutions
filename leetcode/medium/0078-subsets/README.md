@@ -38,8 +38,8 @@ Output: [[],[0]]
 
 **Language:** C++  
 **Runtime:** 3 ms (beats 27.77%)  
-**Memory:** 15.9 MB (beats 5.84%)  
-**Submitted:** 2026-07-13T01:39:58.534Z  
+**Memory:** 15.8 MB (beats 5.84%)  
+**Submitted:** 2026-07-13T01:43:15.180Z  
 
 ```cpp
 class Solution {
@@ -54,9 +54,9 @@ public:
         }
         else
         {
-            v.push_back(n[i]);
+           
             solve(n,v,i+1);
-            v.pop_back();
+            v.push_back(n[i]);
             solve(n,v,i+1);
         }
     }
