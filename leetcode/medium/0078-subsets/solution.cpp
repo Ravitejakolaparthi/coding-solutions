@@ -10,9 +10,9 @@ public:
         }
         else
         {
-            v.push_back(n[i]);
+           
             solve(n,v,i+1);
-            v.pop_back();
+            v.push_back(n[i]);
             solve(n,v,i+1);
         }
     }
