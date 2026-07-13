@@ -5,6 +5,7 @@ public:
     {
         if(i == n.size())
         {
+            sort(v.begin(),v.end());
             b.push_back(v);
         }
         else
