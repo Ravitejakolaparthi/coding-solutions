@@ -36,9 +36,9 @@ Output: [[],[0]]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 9.7 MB  
-**Submitted:** 2026-07-13T01:55:23.465Z  
+**Runtime:** 11 ms (beats 6.14%)  
+**Memory:** 17.7 MB (beats 5.03%)  
+**Submitted:** 2026-07-13T02:04:24.029Z  
 
 ```cpp
 class Solution {
@@ -48,6 +48,7 @@ public:
     {
         if(i == n.size())
         {
+            sort(v.begin(),v.end());
             b.push_back(v);
         }
         else
