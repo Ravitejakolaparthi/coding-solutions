@@ -62,14 +62,39 @@ RRLLRLRL
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-15T15:31:37.782Z  
+**Submitted:** 2026-07-15T15:38:04.262Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 int main()
 {
-    
+    int t;
+    cin >> t;
+    while(t--)
+    {
+        int n;
+        int k;
+        cin >> n >>k;
+        string s;
+        int c = 0;
+        int a =0;
+        int m = k;
+        while(k>0)
+        {
+            if(s[k] == 'R')
+            c++;
+            
+            k--;
+        }
+        while(m<n)
+        {
+          if(s[m] == 'L')
+          a++;
+          
+            m--;
+        }
+    }
     return 0;
 }
 ```
