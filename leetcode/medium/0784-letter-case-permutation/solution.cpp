@@ -16,8 +16,7 @@ public:
 
                 v[i] = toupper(v[i]);
             }
-            
-            solve(v,i+1);
+           
         }
     }
     vector<string> letterCasePermutation(string s) {
