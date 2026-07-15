@@ -75,7 +75,7 @@ It's impossible to even modify the given string since it only contains one $0$. 
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-15T16:07:12.945Z  
+**Submitted:** 2026-07-15T16:07:23.554Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
