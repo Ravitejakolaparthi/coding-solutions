@@ -36,9 +36,9 @@ Output: ["3z4","3Z4"]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 4 ms (beats 32.92%)  
-**Memory:** 16.2 MB (beats 7.73%)  
-**Submitted:** 2026-07-15T01:18:12.710Z  
+**Runtime:** 0 ms  
+**Memory:** 7.9 MB  
+**Submitted:** 2026-07-15T01:17:13.317Z  
 
 ```cpp
 class Solution {
@@ -59,8 +59,7 @@ public:
 
                 v[i] = toupper(v[i]);
             }
-            
-            solve(v,i+1);
+           
         }
     }
     vector<string> letterCasePermutation(string s) {
