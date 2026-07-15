@@ -62,7 +62,7 @@ RRLLRLRL
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-15T15:22:46.262Z  
+**Submitted:** 2026-07-15T15:24:37.810Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
