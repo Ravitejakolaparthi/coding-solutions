@@ -10,6 +10,7 @@ int main()
         int k;
         cin >> n >>k;
         string s;
+        cin >> s;
         int c = 0;
         int a =0;
         int m = k;
@@ -25,8 +26,9 @@ int main()
           if(s[m] == 'L')
           a++;
           
-            m--;
+            m++;
         }
+        cout << min(a,c) <<endl;
     }
     return 0;
 }
