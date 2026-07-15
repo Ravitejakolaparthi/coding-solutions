@@ -36,9 +36,9 @@ Output: ["3z4","3Z4"]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 1 ms (beats 67.19%)  
-**Memory:** 15.8 MB (beats 14.75%)  
-**Submitted:** 2026-07-15T01:16:35.913Z  
+**Runtime:** 0 ms  
+**Memory:** 8.1 MB  
+**Submitted:** 2026-07-15T01:17:01.972Z  
 
 ```cpp
 class Solution {
@@ -59,6 +59,7 @@ public:
 
                 v[i] = toupper(v[i]);
             }
+            else
             solve(v,i+1);
         }
     }
