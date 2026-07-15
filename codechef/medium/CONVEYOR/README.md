@@ -62,7 +62,7 @@ RRLLRLRL
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-15T15:39:06.320Z  
+**Submitted:** 2026-07-15T15:43:42.655Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -73,28 +73,26 @@ int main()
     cin >> t;
     while(t--)
     {
-        int n;
-        int k;
-        cin >> n >>k;
+        int n, k;
+        cin >> n >> k;
         string s;
+        cin >> s;
+        
+       
         int c = 0;
-        int a =0;
-        int m = k;
-        while(k>0)
+        for(int i = 0; i < k; i++)
         {
-            if(s[k] == 'R')
-            c++;
-            
-            k--;
+            if(s[i] == 'R') c++;
         }
-        while(m<n)
+        
+        
+        int a = 0;
+        for(int i = k-1; i < n; i++)
         {
-          if(s[m] == 'L')
-          a++;
-          
-            m++;
+            if(s[i] == 'L') a++;
         }
-        cout << c << a <<endl;
+        
+        cout << min(a, c) << endl;
     }
     return 0;
 }
