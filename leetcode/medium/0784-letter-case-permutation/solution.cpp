@@ -16,6 +16,7 @@ public:
 
                 v[i] = toupper(v[i]);
             }
+            else
             solve(v,i+1);
         }
     }
