@@ -62,7 +62,7 @@ RRLLRLRL
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-15T15:40:04.986Z  
+**Submitted:** 2026-07-15T15:39:06.320Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -77,7 +77,6 @@ int main()
         int k;
         cin >> n >>k;
         string s;
-        cin >> s;
         int c = 0;
         int a =0;
         int m = k;
@@ -95,7 +94,7 @@ int main()
           
             m++;
         }
-        cout << min(a,c) <<endl;
+        cout << c << a <<endl;
     }
     return 0;
 }
