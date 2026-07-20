@@ -37,18 +37,18 @@ Output: [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 10.2 MB (beats 37.65%)  
-**Submitted:** 2026-07-20T16:04:24.208Z  
+**Runtime:** 0 ms  
+**Memory:** 8.5 MB  
+**Submitted:** 2026-07-20T16:04:48.627Z  
 
 ```cpp
 class Solution {
 public:
     void rotate(vector<vector<int>>& matrix) {
         int a  = 0;
-            for(int i = 0;i<matrix.size();++i)
+            for(int i = 0;i<matrix.size();i++)
             {
-                for(int j =i+1;j<matrix[0].size();++j)
+                for(int j =i+1;j<matrix[0].size();j++)
                 {
                         int a = matrix[i][j];
                         matrix[i][j] = matrix[j][i];
