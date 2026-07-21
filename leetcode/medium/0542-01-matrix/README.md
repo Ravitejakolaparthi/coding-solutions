@@ -45,8 +45,8 @@ Output: [[0,0,0],[0,1,0],[1,2,1]]
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8.7 MB  
-**Submitted:** 2026-07-21T16:18:32.814Z  
+**Memory:** 8.5 MB  
+**Submitted:** 2026-07-21T16:19:15.590Z  
 
 ```cpp
 class Solution {
@@ -65,12 +65,12 @@ public:
             }
             else
             {
-                c+= 1;
+                
                 visited[i][j] =true;
-                c =dfs(mat,i+1,j,n,m,c,visited);
-                c =dfs(mat,i,j+1,n,m,c,visited);
-                c =dfs(mat,i-1,j,n,m,c,visited);
-                c =dfs(mat,i,j-1,n,m,c,visited);
+                c =dfs(mat,i+1,j,n,m,c++,visited);
+                c =dfs(mat,i,j+1,n,m,c++,visited);
+                c =dfs(mat,i-1,j,n,m,c++,visited);
+                c =dfs(mat,i,j-1,n,m,c++,visited);
                 visited[i][j] =false;
             }
         }
