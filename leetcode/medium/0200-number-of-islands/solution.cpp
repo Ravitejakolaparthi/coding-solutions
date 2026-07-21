@@ -6,21 +6,22 @@ public:
         if(i >=0 && i <= n-1 && j >=0 && j <= m-1)
         {
             
-            if(v[i][j] != true)
+            if(v[i][j] == true)
+            return ;
+            if(grid[i][j] == '0')
+            return ;
+            else
             {
-             if(grid[i][j] != '0')
-             {
-                 v[i][j] = true;
-                 cout << i << j<<endl;
-
+                v[i][j] =true;
+                dfs(grid,i-1,j,n,m,v);
                 dfs(grid,i,j+1,n,m,v);
                 dfs(grid,i+1,j,n,m,v);
                 dfs(grid,i,j-1,n,m,v);
-                dfs(grid,i-1,j,n,m,v);
+              
             }
-            }
+
         }
-     
+        // return;
     }
     int numIslands(vector<vector<char>>& grid) {
         int n = grid.size();
