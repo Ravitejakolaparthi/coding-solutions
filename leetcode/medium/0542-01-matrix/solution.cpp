@@ -14,12 +14,12 @@ public:
             }
             else
             {
-                c+= 1;
+                
                 visited[i][j] =true;
-                c =dfs(mat,i+1,j,n,m,c,visited);
-                c =dfs(mat,i,j+1,n,m,c,visited);
-                c =dfs(mat,i-1,j,n,m,c,visited);
-                c =dfs(mat,i,j-1,n,m,c,visited);
+                c =dfs(mat,i+1,j,n,m,c++,visited);
+                c =dfs(mat,i,j+1,n,m,c++,visited);
+                c =dfs(mat,i-1,j,n,m,c++,visited);
+                c =dfs(mat,i,j-1,n,m,c++,visited);
                 visited[i][j] =false;
             }
         }
