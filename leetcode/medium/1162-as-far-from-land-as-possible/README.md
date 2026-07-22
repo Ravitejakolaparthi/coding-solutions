@@ -40,9 +40,9 @@ Explanation: The cell (2, 2) is as far as possible from all the land with distan
 ## Solution
 
 **Language:** C++  
-**Runtime:** 11 ms (beats 88.87%)  
-**Memory:** 23.7 MB (beats 83.55%)  
-**Submitted:** 2026-07-22T15:58:42.094Z  
+**Runtime:** 22 ms (beats 27.85%)  
+**Memory:** 23.8 MB (beats 72.69%)  
+**Submitted:** 2026-07-22T15:58:51.936Z  
 
 ```cpp
 class Solution {
