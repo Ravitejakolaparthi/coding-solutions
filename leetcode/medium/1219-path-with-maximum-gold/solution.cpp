@@ -4,7 +4,7 @@ public:
     // vector<int>dx = {0,0,1,-1};
     // vector<int>dy = {1,-1,0,0};1
     vector<int>z;
-    int dfs(vector<vector<int>>&grid,vector<vector<bool>>vis,int i,int j,int n,int m,int &cnt)
+    int dfs(vector<vector<int>>&grid,vector<vector<bool>>&vis,int i,int j,int n,int m,int &cnt)
     {
         if(i>=0 && i<=n-1 && j <= m-1 && j >= 0)
         {
@@ -23,8 +23,9 @@ public:
                      dfs(grid,vis,i+1,j,n,m,cnt);
                      dfs(grid,vis,i,j+1,n,m,cnt);
                      dfs(grid,vis,i-1,j,n,m,cnt);
-                     dfs(grid,vis,i,j+1,n,m,cnt);
+                     dfs(grid,vis,i,j-1,n,m,cnt);
                      z.push_back(cnt);
+                     vis[i][j] = false;
                      cnt -= grid[i][j];
             }
            
@@ -47,8 +48,9 @@ public:
                 }
             }
         }
-        for(auto x : z) cout << x << " ";
+        // for(auto x : z) cout << x << " ";
         int ms = 0;
+        if(!z.empty())
         ms  = *max_element(z.begin(),z.end());
         return ms;
     }
