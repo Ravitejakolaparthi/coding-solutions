@@ -1,46 +1,43 @@
 class Solution {
 public:
-    int dfs(vector<vector<int>>&mat,int i,int j,int n,int m,int c,vector<vector<bool>>&visited)
-    {
-        if(i >= 0 && i <=n-1 && j >=0 && j<=m-1)
-        {
-            if(mat[i][j] == 0)
-            {
-                return c;
-            }
-            if(visited[i][j] == true)
-            {
-                return c;
-            }
-            else
-            {
-                
-                visited[i][j] =true;
-                c =dfs(mat,i+1,j,n,m,c++,visited);
-                c =dfs(mat,i,j+1,n,m,c++,visited);
-                c =dfs(mat,i-1,j,n,m,c++,visited);
-                c =dfs(mat,i,j-1,n,m,c++,visited);
-                visited[i][j] =false;
-            }
-        }
-        return c;
-    }
+    
     vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
         int n = mat.size();
         int m = mat[0].size();
-        int c = 0;
-        vector<vector<int>>v(n,vector<int>(m,0));
-        vector<vector<bool>>visited(n,vector<bool>(m,false));
+        queue<pair<int,int>>q;
+        vector<vector<int>>distance(n,vector<int>(m,-1));
         for(int i = 0;i<n;i++)
         {
             for(int j = 0;j<m;j++)
             {
-                if(mat[i][j] == 1 && visited[i][j] == false)
+                if(mat[i][j] == 0)
                 {
-                    v[i][j] = dfs(mat,i,j,n,m,c,visited);
+                    distance[i][j] = 0;
+                    q.push({i,j});
                 }
             }
         }
-        return v;
+        vector<int>directionX = {0,0,1,-1};
+        vector<int>directionY = {1,-1,0,0};
+
+        while(!q.empty())
+        {
+            int x = q.front().first;
+            int y = q.front().second;
+            q.pop();
+            for(int i = 0;i<4;i++)
+            {
+                int X = x+directionX[i];
+                int Y = y+directionY[i];
+
+                if(X <= n-1 && X>=0 && Y<=m-1 && Y>=0 && distance[X][Y] == -1)
+                {
+                    distance[X][Y] = distance[x][y] + 1;
+                    q.push({X,Y});
+                }
+            }
+
+        }  
+        return distance;
     }
 };
