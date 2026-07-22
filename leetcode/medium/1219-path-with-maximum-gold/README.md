@@ -57,9 +57,9 @@ Path to get the maximum gold, 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 27 ms  
-**Memory:** 27 MB  
-**Submitted:** 2026-07-22T16:41:37.901Z  
+**Runtime:** 175 ms (beats 33.03%)  
+**Memory:** 54.4 MB (beats 5.01%)  
+**Submitted:** 2026-07-22T16:53:55.024Z  
 
 ```cpp
 class Solution {
@@ -68,7 +68,7 @@ public:
     // vector<int>dx = {0,0,1,-1};
     // vector<int>dy = {1,-1,0,0};1
     vector<int>z;
-    int dfs(vector<vector<int>>&grid,vector<vector<bool>>vis,int i,int j,int n,int m,int &cnt)
+    int dfs(vector<vector<int>>&grid,vector<vector<bool>>&vis,int i,int j,int n,int m,int &cnt)
     {
         if(i>=0 && i<=n-1 && j <= m-1 && j >= 0)
         {
@@ -87,8 +87,9 @@ public:
                      dfs(grid,vis,i+1,j,n,m,cnt);
                      dfs(grid,vis,i,j+1,n,m,cnt);
                      dfs(grid,vis,i-1,j,n,m,cnt);
-                     dfs(grid,vis,i,j+1,n,m,cnt);
+                     dfs(grid,vis,i,j-1,n,m,cnt);
                      z.push_back(cnt);
+                     vis[i][j] = false;
                      cnt -= grid[i][j];
             }
            
@@ -111,8 +112,9 @@ public:
                 }
             }
         }
-        for(auto x : z) cout << x << " ";
+        // for(auto x : z) cout << x << " ";
         int ms = 0;
+        if(!z.empty())
         ms  = *max_element(z.begin(),z.end());
         return ms;
     }
