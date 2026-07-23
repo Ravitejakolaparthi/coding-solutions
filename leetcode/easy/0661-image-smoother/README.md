@@ -46,9 +46,9 @@ For the point (1,1): floor((50+200+200+200+200+100+100+100+100)/9) = floor(138.8
 ## Solution
 
 **Language:** C++  
-**Runtime:** 9 ms (beats 28.57%)  
-**Memory:** 26.3 MB (beats 35.17%)  
-**Submitted:** 2026-07-23T15:52:34.491Z  
+**Runtime:** 19 ms (beats 5.28%)  
+**Memory:** 26.4 MB (beats 13.33%)  
+**Submitted:** 2026-07-23T15:53:00.925Z  
 
 ```cpp
 class Solution {
