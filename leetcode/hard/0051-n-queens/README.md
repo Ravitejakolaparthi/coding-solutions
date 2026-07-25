@@ -38,9 +38,9 @@ Output: [["Q"]]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 39 ms (beats 6.86%)  
-**Memory:** 50.2 MB (beats 5.04%)  
-**Submitted:** 2026-07-25T05:54:53.772Z  
+**Runtime:** 42 ms (beats 6.51%)  
+**Memory:** 50 MB (beats 5.04%)  
+**Submitted:** 2026-07-25T06:07:27.027Z  
 
 ```cpp
 class Solution {
@@ -50,14 +50,14 @@ public:
     {
         int x = i;
         int y = j;
-        while(x<n && y>=0)
-        {
-            if(board[x][y] == 'Q') return false;
-            x++;
-            y--;
-        }
-        x = i;
-        y = j;
+        // while(x<n && y>=0)
+        // {
+        //     if(board[x][y] == 'Q') return false;
+        //     x++;
+        //     y--;
+        // }
+        // x = i;
+        // y = j;
         while(x>=0 && y < n)
         {
             if(board[x][y] == 'Q') return false;
@@ -72,14 +72,14 @@ public:
             x--;
             y--;
         }
-        x = i;
-        y = j;
-        while(x <n && y <n)
-        {
-            if(board[x][y] == 'Q') return false;
-            x++;
-            y++;
-        }
+        // x = i;
+        // y = j;
+        // while(x <n && y <n)
+        // {
+        //     if(board[x][y] == 'Q') return false;
+        //     x++;
+        //     y++;
+        // }
         for(int k = 0;k<n;k++){
             if(board[k][j] == 'Q') return false;
         }
