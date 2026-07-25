@@ -5,14 +5,14 @@ public:
     {
         int x = i;
         int y = j;
-        while(x<n && y>=0)
-        {
-            if(board[x][y] == 'Q') return false;
-            x++;
-            y--;
-        }
-        x = i;
-        y = j;
+        // while(x<n && y>=0)
+        // {
+        //     if(board[x][y] == 'Q') return false;
+        //     x++;
+        //     y--;
+        // }
+        // x = i;
+        // y = j;
         while(x>=0 && y < n)
         {
             if(board[x][y] == 'Q') return false;
@@ -27,14 +27,14 @@ public:
             x--;
             y--;
         }
-        x = i;
-        y = j;
-        while(x <n && y <n)
-        {
-            if(board[x][y] == 'Q') return false;
-            x++;
-            y++;
-        }
+        // x = i;
+        // y = j;
+        // while(x <n && y <n)
+        // {
+        //     if(board[x][y] == 'Q') return false;
+        //     x++;
+        //     y++;
+        // }
         for(int k = 0;k<n;k++){
             if(board[k][j] == 'Q') return false;
         }
