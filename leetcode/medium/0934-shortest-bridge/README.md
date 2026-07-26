@@ -50,9 +50,9 @@ Output: 1
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.7 MB  
-**Submitted:** 2026-07-26T12:20:55.621Z  
+**Runtime:** 2 ms (beats 91.07%)  
+**Memory:** 22.3 MB (beats 87.94%)  
+**Submitted:** 2026-07-26T12:21:09.545Z  
 
 ```cpp
 class Solution {
