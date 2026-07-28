@@ -35,7 +35,7 @@ public:
             {
                 s1[left] = i.first; 
                 i.second = 0;
-                break;
+                // break;
             }
         }
         return s1;
