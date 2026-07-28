@@ -51,9 +51,9 @@ Rearranging `"daccad"` → `"acddca"` gives the smallest lexicographic palindrom
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 7.8 MB  
-**Submitted:** 2026-07-28T03:09:44.369Z  
+**Runtime:** 199 ms (beats 5.05%)  
+**Memory:** 61.9 MB (beats 75.38%)  
+**Submitted:** 2026-07-28T03:09:52.916Z  
 
 ```cpp
 class Solution {
