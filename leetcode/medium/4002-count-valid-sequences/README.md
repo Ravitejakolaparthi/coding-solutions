@@ -73,9 +73,9 @@ The only possible sequence of length `k = 5` whose sum is 5 is `[1, 1, 1, 1, 1]`
 ## Solution
 
 **Language:** C++  
-**Runtime:** 822 ms  
+**Runtime:** 849 ms  
 **Memory:** 16.7 MB  
-**Submitted:** 2026-07-28T09:35:02.151Z  
+**Submitted:** 2026-07-28T09:35:43.716Z  
 
 ```cpp
 class Solution {
