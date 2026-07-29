@@ -59,7 +59,7 @@ $48$ has two different digits $4$ and $8$, so it is  *varied*.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T14:32:45.392Z  
+**Submitted:** 2026-07-29T14:33:02.385Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -71,7 +71,7 @@ int main()
     int a = x%10;
     x = x/10;
     int b = x%10;
-    if(a == b)
+    if(a != b)
     cout << "Yes\n";
     else
     cout << "No\n";
