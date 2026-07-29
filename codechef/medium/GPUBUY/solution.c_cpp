@@ -20,14 +20,16 @@ int main()
              continue;
         }
         int months = -1;
+        int flag = 0;
         if(cm > cp)
         {
             if(cp+ip <= cm)
             {
                 cout << 1 <<endl;
-                continue;
+                flag = 1;
             }
-            
+            if(flag == 1)
+            continue;
         }
         // totalmoney = cm;
         while(totalmoney <= cp)
