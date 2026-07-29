@@ -72,7 +72,7 @@ In the first month, its price increases by $Y=2$ to become $8$ coins. Chef earns
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T14:39:59.445Z  
+**Submitted:** 2026-07-29T14:41:47.202Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -83,8 +83,13 @@ int main()
     cin >>t;
     while(t--)
     {
+        
+        int totalmoney = 0;
         int cp,ip,cm;
-        int months = 0;
+        cin >> cp >> ip >> cm;
+        if(ip >= cm)
+        cout << -1 <<endl;
+        int months = -1;
         while(totalmoney <= cp)
         {
             months++;
