@@ -70,7 +70,7 @@ No
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T16:26:29.507Z  
+**Submitted:** 2026-07-29T16:31:14.594Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -82,22 +82,28 @@ int main()
     cin >>t;
     while(t--)
     {
+        int flag = 0;
         int n;
         cin >> n;
         vector<int>v(n);
         for(int i = 0;i<n;i++) cin >> v[i];
         int i = 0,j = n-1;
-        set<int>s;
-        while(i<j)
+        vector<int>res;
+        while(i<=j)
         {
-            s.insert(abs(v[i]-v[j]));
+            res.push_back(abs(v[i]-v[j]));
             i++;
             j--;
         }
-        if(s.size() == 1)
-        cout << "yes\n";
-        else
-        cout << "No\n";
+       for(int i =0;i<n;i++)
+       {
+           if(res[i]%2 != 0)
+           flag = 1;
+       }
+       if(flag == 0)
+       cout << "Yes\n";
+       else
+       cout << "No\n";
         
      }
     return 0;
