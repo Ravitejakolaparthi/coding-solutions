@@ -58,7 +58,7 @@ It can be verified that this is the minimum number of operations needed.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T15:03:02.535Z  
+**Submitted:** 2026-07-29T15:05:36.449Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -67,8 +67,8 @@ int solve1(int x,int y,int z,int moves)
 {
     if(x*y <= z)
     {
-        moves += 1;
-        solve1(x+1,y,z,moves);
+        // moves += 1;
+        moves = solve1(x+1,y,z,moves) + 1;
     }
     return moves;
 }
@@ -76,8 +76,7 @@ int solve2(int x,int y,int z,int moves)
 {
     if(x*y <=z)
     {
-        moves += 1;
-        solve1(x,y+1,z,moves);
+       moves =  solve2(x,y+1,z,moves) + 1;
     }
     return moves;
     
