@@ -70,7 +70,7 @@ No
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T16:02:16.785Z  
+**Submitted:** 2026-07-29T16:09:53.805Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -86,22 +86,19 @@ int main()
         cin >> n;
         vector<int>v(n);
         for(int i = 0;i<n;i++) cin >> v[i];
-        int flag = 0; 
-        int i = 0;
-        int j = n-1;
-        int s =abs(v[i]-v[j]);
-        while(i < j)
+        int i = 0,j = n-1;
+        set<int>s;
+        while(i<j)
         {
+            s.insert(abs(v[i]-v[j]));
             i++;
             j--;
-            if(s != abs(v[i]-v[j]))
-            flag = 1;
-            
         }
-        if(flag == 1)
-        cout << "No\n";
+        if(s.size() == 1)
+        cout << "yes\n";
         else
-        cout << "Yes\n";
+        cout << "No\n";
+        
      }
     return 0;
 }
