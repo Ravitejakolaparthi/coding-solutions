@@ -70,7 +70,7 @@ No
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T16:34:00.519Z  
+**Submitted:** 2026-07-29T16:41:28.478Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -95,7 +95,26 @@ int main()
             i++;
             j--;
         }
-       for(int i =0;i<n;i++)
+        vector<int>g;
+        for(int i = 0;i<n-1;i++)
+        {
+            g.push_back(abs(v[i]-v[i+1]));
+        }
+        int f = 0;
+        for(int i=0;i<n-1;i++)
+        {
+            if(g[i]>2)
+            {
+                cout << "No\n";
+                f = 1;
+            }
+            if(f == 1)
+            break;
+            
+        }
+        if(f==1)
+        continue;
+       for(int i =0;i<res.size();i++)
        {
            if(res[i] != 0 && res[i] != 2)
            flag = 1;
