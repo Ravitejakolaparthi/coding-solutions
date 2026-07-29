@@ -58,18 +58,43 @@ It can be verified that this is the minimum number of operations needed.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T14:53:06.197Z  
+**Submitted:** 2026-07-29T15:00:38.780Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
+int solve1(int x,int y,int z,int moves)
+{
+    if(x*y > z)
+    return moves;
+    else
+    {
+        moves += 1;
+        solve1(x+1,y,z,moves);
+    }
+    
+}
+int solve2(int x,int y,int z,int moves)
+{
+    if(x*y > z)
+    return moves;
+    else
+    {
+        moves += 1;
+        solve1(x,y+1,z,moves);
+    }
+    
+}
 int main()
 {
     int t;
     cin >> t;
     while(t--)
     {
-        
+        int x,y,z;
+        int a = solve1(x,y,z,0);
+        int b = solve2(x,y,z,0);
+        cout << min(a,b) <<endl;
     }
     return 0;
 }
