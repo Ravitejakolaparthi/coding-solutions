@@ -6,8 +6,13 @@ int main()
     cin >>t;
     while(t--)
     {
+        
+        int totalmoney = 0;
         int cp,ip,cm;
-        int months = 0;
+        cin >> cp >> ip >> cm;
+        if(ip >= cm)
+        cout << -1 <<endl;
+        int months = -1;
         while(totalmoney <= cp)
         {
             months++;
