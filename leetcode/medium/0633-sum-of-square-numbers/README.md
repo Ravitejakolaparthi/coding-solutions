@@ -34,21 +34,21 @@ Output: false
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 7.7 MB  
-**Submitted:** 2026-07-29T08:48:49.716Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 7.7 MB (beats 89.43%)  
+**Submitted:** 2026-07-29T08:54:50.177Z  
 
 ```cpp
 class Solution {
 public:
     bool judgeSquareSum(int c) {
         int i = 0;
-        int j = c-1;
-        while(i < j)
+        int j = sqrt(c);
+        while(i <= j)
         {
-            if(i*i + j*j == c)
+            if(1LL*i*i + 1LL*j*j == c)
             return true;
-            else if(i*i + j*j > c)
+            else if(1LL*i*i + 1LL*j*j > c)
             {
                 j--;
             }
