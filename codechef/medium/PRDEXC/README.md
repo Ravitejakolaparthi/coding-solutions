@@ -58,7 +58,7 @@ It can be verified that this is the minimum number of operations needed.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T15:38:30.541Z  
+**Submitted:** 2026-07-29T15:40:22.717Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -70,16 +70,16 @@ int main()
     while(t--)
     {
         int x,y,z;
-        cin >> x >>y>>z;
+        cin >> x >> y >>z;
         int cnt = 0;
         while(x*y < z)
         {
-            cnt++;
+            cnt+=1;
             if(x < y)
             {
                 x+=1;
             }
-            if(x > y)
+            else 
             {
                 y+=1;
             }
