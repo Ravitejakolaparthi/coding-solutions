@@ -59,7 +59,7 @@ $48$ has two different digits $4$ and $8$, so it is  *varied*.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T14:33:02.385Z  
+**Submitted:** 2026-07-29T14:33:08.908Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
