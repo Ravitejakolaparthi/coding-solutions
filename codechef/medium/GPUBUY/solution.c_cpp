@@ -10,15 +10,12 @@ int main()
         int totalmoney = 0;
         int cp,ip,cm;
         cin >> cp >> ip >> cm;
-        if(ip >= cm){
+        if(ip >= cm)
         cout << -1 <<endl;
-        continue;
-        }
         int months = -1;
-      
         while(totalmoney <= cp)
         {
-            months+=1;
+            months++;
             cp += ip;
             totalmoney+=cm;
         }
