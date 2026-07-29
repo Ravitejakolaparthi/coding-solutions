@@ -7,16 +7,16 @@ int main()
     while(t--)
     {
         int x,y,z;
-        cin >> x >>y>>z;
+        cin >> x >> y >>z;
         int cnt = 0;
         while(x*y < z)
         {
-            cnt++;
+            cnt+=1;
             if(x < y)
             {
                 x+=1;
             }
-            if(x > y)
+            else 
             {
                 y+=1;
             }
