@@ -7,7 +7,7 @@ int main()
     int a = x%10;
     x = x/10;
     int b = x%10;
-    if(a == b)
+    if(a != b)
     cout << "Yes\n";
     else
     cout << "No\n";
