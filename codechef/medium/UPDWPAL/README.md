@@ -70,7 +70,7 @@ No
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T15:56:45.495Z  
+**Submitted:** 2026-07-29T16:02:16.785Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -83,15 +83,20 @@ int main()
     while(t--)
     {
         int n;
+        cin >> n;
         vector<int>v(n);
         for(int i = 0;i<n;i++) cin >> v[i];
-        int flag = 0;        
-        for(int i=0;i<n-1;i++)
+        int flag = 0; 
+        int i = 0;
+        int j = n-1;
+        int s =abs(v[i]-v[j]);
+        while(i < j)
         {
-            if(abs(v[i] - v[i+1]) != abs(v[i+1] - v[i+2]))
-            {
-                flag = 1;
-            }
+            i++;
+            j--;
+            if(s != abs(v[i]-v[j]))
+            flag = 1;
+            
         }
         if(flag == 1)
         cout << "No\n";
