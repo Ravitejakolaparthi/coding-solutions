@@ -15,7 +15,7 @@ int main()
         continue;
         }
         int months = -1;
-        if(cm > cp)
+        if(cm >= cp)
         {
             if(cp+ip <= cm)
             cout << 1 <<endl;
