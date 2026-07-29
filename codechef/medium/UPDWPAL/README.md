@@ -70,7 +70,7 @@ No
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T16:31:14.594Z  
+**Submitted:** 2026-07-29T16:34:00.519Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -97,7 +97,7 @@ int main()
         }
        for(int i =0;i<n;i++)
        {
-           if(res[i]%2 != 0)
+           if(res[i] != 0 && res[i] != 2)
            flag = 1;
        }
        if(flag == 0)
