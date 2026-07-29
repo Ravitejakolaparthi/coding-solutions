@@ -44,9 +44,9 @@ numArray.sumRange(0, 5); // return (-2) + 0 + 3 + (-5) + 2 + (-1) = -3
 ## Solution
 
 **Language:** C++  
-**Runtime:** 109 ms (beats 5.98%)  
-**Memory:** 23.9 MB (beats 63.20%)  
-**Submitted:** 2026-07-29T09:52:42.400Z  
+**Runtime:** 102 ms (beats 12.02%)  
+**Memory:** 24 MB (beats 25.62%)  
+**Submitted:** 2026-07-29T09:54:34.595Z  
 
 ```cpp
 class NumArray {
