@@ -38,9 +38,9 @@ Explanation: The longest palindrome that can be built is "a", whose length is 1.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.5 MB  
-**Submitted:** 2026-07-30T16:40:57.670Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 9.5 MB (beats 5.50%)  
+**Submitted:** 2026-07-30T16:47:00.240Z  
 
 ```cpp
 class Solution {
@@ -71,21 +71,18 @@ public:
             {
             sum+=i->second;
             }
-            else if(i->second == 1 && one ==0)
-            {
-                one++;
-                odd++;
-            }
             else
             {
                cnt++;
                odd+=i->second;
-            }
-        }
 
+            }
+
+        }
+        // cnt-=1;
         if(odd > 0)
         {
-            return sum + odd-cnt;
+            return sum + odd-cnt+1;
         }
         else
         {
