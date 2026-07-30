@@ -26,21 +26,18 @@ public:
             {
             sum+=i->second;
             }
-            else if(i->second == 1 && one ==0)
-            {
-                one++;
-                odd++;
-            }
             else
             {
                cnt++;
                odd+=i->second;
-            }
-        }
 
+            }
+
+        }
+        // cnt-=1;
         if(odd > 0)
         {
-            return sum + odd-cnt;
+            return sum + odd-cnt+1;
         }
         else
         {
