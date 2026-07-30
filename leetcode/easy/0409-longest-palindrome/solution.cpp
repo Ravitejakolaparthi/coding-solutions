@@ -18,22 +18,29 @@ public:
                 mp[s[i]]++;
             }
         }
-
+        int one  = 0;
+        int cnt = 0;
         for(auto i = mp.begin();i!=mp.end();i++)
         {
             if(i->second%2 == 0)
             {
             sum+=i->second;
             }
+            else if(i->second == 1 && one ==0)
+            {
+                one++;
+                odd++;
+            }
             else
             {
-            odd = max(odd,i->second);
+               cnt++;
+               odd+=i->second;
             }
         }
 
         if(odd > 0)
         {
-            return sum + odd;
+            return sum + odd-cnt;
         }
         else
         {
