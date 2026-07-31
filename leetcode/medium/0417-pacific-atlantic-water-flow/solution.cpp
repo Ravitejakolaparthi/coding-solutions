@@ -8,12 +8,14 @@ public:
     void solvepacific(vector<vector<int>>&heights,int n,int m)
     {
         queue<pair<int,int>>q;
-        for(int i = 0;i<n;i++)
+        for(int i = 0;i<m;i++)
         {
+            pacific[0][i] = 1;
             q.push({0,i});
         }
         for(int i=0;i<n;i++)
         {
+            pacific[i][0] = 1;
             q.push({i,0});
         }
         while(!q.empty())
@@ -56,13 +58,15 @@ public:
     void solveatla(vector<vector<int>>&heights,int n,int m)
     {
               queue<pair<int,int>>q;
-        for(int i = 0;i<n;i++)
+        for(int i = 0;i<m;i++)
         {
-            q.push({4,i});
+            atlantic[n-1][i] = 1;
+            q.push({n-1,i});
         }
         for(int i=0;i<n;i++)
         {
-            q.push({i,4});
+            atlantic[i][m-1] = 1;
+            q.push({i,m-1});
         }
         while(!q.empty())
         {
@@ -118,16 +122,16 @@ public:
                 }
             }
         }
-        set<vector<int>>s(answers.begin(),answers.end());
+        // set<vector<int>>s(answers.begin(),answers.end());
         // if(n == 2 && m == 2)
         // {
         //     s.insert({0,0});
         //     s.insert({n-1,m-1});
         // }
-        s.insert({0,n-1});
-        s.insert({m-1,0});
-        vector<vector<int>>result(s.begin(),s.end());
-        return result;
+        // s.insert({0,n-1});
+        // s.insert({m-1,0});
+        // vector<vector<int>>result(s.begin(),s.end());
+        return answers;
 
     }
 };
