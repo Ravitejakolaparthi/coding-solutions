@@ -49,9 +49,9 @@ Output:
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 9.3 MB  
-**Submitted:** 2026-07-31T17:27:00.991Z  
+**Runtime:** 99 ms (beats 5.29%)  
+**Memory:** 41.8 MB (beats 5.13%)  
+**Submitted:** 2026-07-31T17:34:02.873Z  
 
 ```cpp
 class Solution {
@@ -59,13 +59,17 @@ public:
     vector<vector<int>>b;
     void move(vector<int>&n,int s,vector<int>v,int i)
     {
-        if(s >= 0 && i <= n.size()-1)
-        {
-            if(s == 0)
+          if(s == 0)
             {
                 // sort(v.begin(),v.end());
                 b.push_back(v);
+                return;
             }
+            if(s <0 || i>n.size()-1)
+            {
+                return ;
+            }
+          
             else
             {
                
@@ -77,7 +81,6 @@ public:
                 move(n,s,v,i+1);
             }
         }
-    }
     vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
      vector<int>v;
      sort(candidates.begin(),candidates.end());
