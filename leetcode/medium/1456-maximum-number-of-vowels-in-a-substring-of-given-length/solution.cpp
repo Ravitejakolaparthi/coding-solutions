@@ -18,7 +18,7 @@ public:
         for(int i = k;i<s.size();i++)
         {
             vowels += vowel(s[i]);
-            vowels += -1*vowel(s[i-k]);
+            vowels -= vowel(s[i-k]);
             currvowels  = max(currvowels,vowels); 
         }
         return currvowels;
