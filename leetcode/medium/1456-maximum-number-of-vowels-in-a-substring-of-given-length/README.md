@@ -48,9 +48,9 @@ Explanation: "lee", "eet" and "ode" contain 2 vowels.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 8 ms (beats 37.58%)  
-**Memory:** 13.2 MB (beats 28.86%)  
-**Submitted:** 2026-08-01T13:04:52.773Z  
+**Runtime:** 1 ms (beats 93.31%)  
+**Memory:** 13.3 MB (beats 28.86%)  
+**Submitted:** 2026-08-01T13:06:55.170Z  
 
 ```cpp
 class Solution {
@@ -73,7 +73,7 @@ public:
         for(int i = k;i<s.size();i++)
         {
             vowels += vowel(s[i]);
-            vowels += -1*vowel(s[i-k]);
+            vowels -= vowel(s[i-k]);
             currvowels  = max(currvowels,vowels); 
         }
         return currvowels;
