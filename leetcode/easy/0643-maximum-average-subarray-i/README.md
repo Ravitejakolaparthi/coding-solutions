@@ -39,8 +39,8 @@ Output: 5.00000
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 113.7 MB (beats 61.76%)  
-**Submitted:** 2026-08-01T13:21:17.164Z  
+**Memory:** 113.7 MB (beats 87.54%)  
+**Submitted:** 2026-08-02T16:08:36.168Z  
 
 ```cpp
 class Solution {
@@ -51,15 +51,14 @@ public:
         {
             avg += nums[i];
         }
-        avg /=k;
         double curravg = avg;
         for(int i = k;i<nums.size();i++)
         {
-            avg += double(nums[i])/k;
-            avg -= double(nums[i-k])/k;
+            avg += double(nums[i]);
+            avg -= double(nums[i-k]);
             curravg = max(curravg,avg);
         }
-        return curravg;
+        return curravg/k;
     }
 };
 ```
