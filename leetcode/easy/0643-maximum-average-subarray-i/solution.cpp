@@ -6,14 +6,13 @@ public:
         {
             avg += nums[i];
         }
-        avg /=k;
         double curravg = avg;
         for(int i = k;i<nums.size();i++)
         {
-            avg += double(nums[i])/k;
-            avg -= double(nums[i-k])/k;
+            avg += double(nums[i]);
+            avg -= double(nums[i-k]);
             curravg = max(curravg,avg);
         }
-        return curravg;
+        return curravg/k;
     }
 };
