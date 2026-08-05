@@ -59,7 +59,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-05T14:50:10.687Z  
+**Submitted:** 2026-08-05T15:25:46.904Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -70,7 +70,7 @@ int main()
     cin >> t;
     while(t--)
     {
-        
+        int x1,y1,x2,y2;
     }
     return 0;
 }
