@@ -44,24 +44,33 @@ numArray.sumRange(0, 5); // return (-2) + 0 + 3 + (-5) + 2 + (-1) = -3
 ## Solution
 
 **Language:** C++  
-**Runtime:** 102 ms (beats 12.02%)  
-**Memory:** 24 MB (beats 25.62%)  
-**Submitted:** 2026-07-29T09:54:34.595Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 23.9 MB (beats 95.15%)  
+**Submitted:** 2026-08-05T19:05:27.657Z  
 
 ```cpp
 class NumArray {
 public:
-    vector<int>nums;
+    // vector<int>nums;
+    vector<int>p;
     NumArray(vector<int>& nums) {
-        this ->nums = nums;
+        // this ->nums = nums;
+        
+        p.resize(nums.size());
+        p[0]=nums[0];
+        for(int i = 1;i<nums.size();i++)
+        {
+            p[i] = p[i-1]+nums[i];
+        }
     }
     
     int sumRange(int left, int right) {
-        int sum=0;
-        for(int i = left;i<=right;i++)
-        sum+=nums[i];
-
-        return sum;
+        // int sum=0; 
+       
+        if(left > 0)
+        return p[right] - p[left-1];
+        else
+        return p[right];
     }
 };
 
