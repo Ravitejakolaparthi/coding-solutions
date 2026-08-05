@@ -53,28 +53,14 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-05T14:36:03.183Z  
+**Submitted:** 2026-08-05T14:38:23.008Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 int main()
 {
-    int t;
-    cin >> t;
-    while(t--)
-    {
-        int n,x,y;
-        cin >> n >> x >> y;
-        if(n<=3)
-        {
-            cout << n*x <<endl;
-        }
-        else
-        {
-            cout << (n-3)*y + 3*x <<endl;
-        }
-    }
+    
     return 0;
 }
 ```
