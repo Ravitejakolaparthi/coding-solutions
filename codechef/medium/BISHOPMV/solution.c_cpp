@@ -10,7 +10,7 @@ int main()
         cin >> x1 >> x2 >> y1 >>y2;
         if((x1+y1)%2 != (x2+y2)%2)
         cout << -1 <<endl;
-        else if(abs(x1-y1)  == abs(x2-y2)  || x1+y1 == x2+y2)
+        else if(abs(x1-y1)  == abs(x2-y2))
         {
             cout << 1 <<endl;
         }
