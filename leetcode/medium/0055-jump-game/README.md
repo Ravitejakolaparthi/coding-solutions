@@ -39,8 +39,8 @@ Explanation: You will always arrive at index 3 no matter what. Its maximum jump 
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8.2 MB  
-**Submitted:** 2026-08-06T15:53:59.495Z  
+**Memory:** 8.3 MB  
+**Submitted:** 2026-08-06T15:58:17.243Z  
 
 ```cpp
 class Solution {
@@ -48,8 +48,11 @@ public:
     bool canJump(vector<int>& nums) {
         if(nums.size() == 1)
         return true;
-        for(int i=0;i<nums.size();i++)
+        
+        for(int i=0;i<nums.size()-1;i++)
         {
+            if(nums[i] >= nums.size()-1)
+            return true;
             if(nums[i]<=0)
             return false;
         }
