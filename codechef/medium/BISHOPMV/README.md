@@ -59,7 +59,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-07T10:33:27.353Z  
+**Submitted:** 2026-08-07T10:33:35.363Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -82,7 +82,6 @@ int main()
         {
             cout << 2 <<endl;
         }
-        
     }
     return 0;
 }
