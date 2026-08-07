@@ -59,7 +59,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-05T15:37:31.277Z  
+**Submitted:** 2026-08-07T10:33:21.377Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -74,7 +74,7 @@ int main()
         cin >> x1 >> x2 >> y1 >>y2;
         if((x1+y1)%2 != (x2+y2)%2)
         cout << -1 <<endl;
-        else if(abs(x1-y1)  == abs(x2-y2))
+        else if(abs(x1-y1)  == abs(x2-y2) )
         {
             cout << 1 <<endl;
         }
