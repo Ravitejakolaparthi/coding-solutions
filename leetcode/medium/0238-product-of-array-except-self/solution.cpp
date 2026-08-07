@@ -11,7 +11,7 @@ public:
                 prefix_product[i] *=right_product_to_i;
                 right_product_to_i *= nums[i];
             }
-            prefix_product[0]=right_product_to_i*1;
+            prefix_product[0]=right_product_to_i;
             return prefix_product;
 
     }
