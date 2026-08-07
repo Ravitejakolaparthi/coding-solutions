@@ -43,9 +43,9 @@ Output: [0,0,9,0,0]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.3 MB  
-**Submitted:** 2026-08-07T16:23:30.971Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 40.2 MB (beats 61.55%)  
+**Submitted:** 2026-08-07T16:24:31.019Z  
 
 ```cpp
 class Solution {
