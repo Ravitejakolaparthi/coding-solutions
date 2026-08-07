@@ -43,9 +43,9 @@ Output: [0,0,9,0,0]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.4 MB  
-**Submitted:** 2026-08-07T16:20:53.376Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 40.1 MB (beats 81.78%)  
+**Submitted:** 2026-08-07T16:21:03.545Z  
 
 ```cpp
 class Solution {
@@ -61,7 +61,7 @@ public:
                 prefix_product[i] *=right_product_to_i;
                 right_product_to_i *= nums[i];
             }
-            prefix_product[0]=right_product_to_i*1;
+            prefix_product[0]=right_product_to_i;
             return prefix_product;
 
     }
