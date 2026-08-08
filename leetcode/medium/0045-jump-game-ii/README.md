@@ -44,8 +44,8 @@ Output: 2
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8.2 MB  
-**Submitted:** 2026-08-08T06:14:02.025Z  
+**Memory:** 8.1 MB  
+**Submitted:** 2026-08-08T06:14:35.371Z  
 
 ```cpp
 class Solution {
@@ -54,7 +54,7 @@ public:
         int can_go = nums[0];
         int Jumps = 0;
         for(int i = 1;i<nums.size();i++){
-            if(can_go < nums.size()-1)
+            if(can_go < nums.size())
             {
                 Jumps++;
             }
