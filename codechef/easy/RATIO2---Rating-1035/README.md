@@ -60,7 +60,7 @@ This is the minimum possible number of operations.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-08T16:51:09.072Z  
+**Submitted:** 2026-08-08T16:51:18.546Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
