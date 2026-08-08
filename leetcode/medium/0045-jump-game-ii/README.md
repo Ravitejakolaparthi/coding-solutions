@@ -43,22 +43,26 @@ Output: 2
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.1 MB  
-**Submitted:** 2026-08-08T06:14:35.371Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 20.4 MB (beats 96.86%)  
+**Submitted:** 2026-08-08T09:27:39.930Z  
 
 ```cpp
 class Solution {
 public:
     int jump(vector<int>& nums) {
-        int can_go = nums[0];
         int Jumps = 0;
-        for(int i = 1;i<nums.size();i++){
-            if(can_go < nums.size())
+        int How_Far = 0;
+        int Max_Far = How_Far;
+        for(int i = 0;i<nums.size()-1;i++)
+        {
+            Max_Far = max(Max_Far,i+nums[i]);
+            if(i == How_Far)
             {
                 Jumps++;
-            }
-            can_go = max(can_go,i+nums[i]);
+                How_Far = Max_Far;
+            }  
+              
         }
         return Jumps;
     }
