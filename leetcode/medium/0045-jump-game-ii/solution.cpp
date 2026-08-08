@@ -4,7 +4,7 @@ public:
         int can_go = nums[0];
         int Jumps = 0;
         for(int i = 1;i<nums.size();i++){
-            if(can_go < nums.size()-1)
+            if(can_go < nums.size())
             {
                 Jumps++;
             }
