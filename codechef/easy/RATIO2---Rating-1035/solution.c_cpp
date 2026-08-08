@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t;
+    cin >> t;
+    while(t--){
+        int x,y;
+        cin >> x >>y;
+        if(x >= 2*y || y >= x*2)
+        {
+            cout << 0 <<endl;
+            continue;
+        }
+        int a,b,c,d;
+        a = x*2-y;
+        b = y-x/2;
+        c = y*2-x;
+        d =x-y/2;
+        int ans = min({a,b,c,d});
+        cout << ans <<endl;
+    }
+    return 0;
+}
