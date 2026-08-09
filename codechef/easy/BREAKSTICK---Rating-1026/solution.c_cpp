@@ -5,7 +5,7 @@ int main()
     int t;
     cin >> t;
     while(t--){
-        int length,x;
+        long long int length,x;
         cin >> length >> x;
         if(length%2 == 0)
         cout << "Yes\n";
