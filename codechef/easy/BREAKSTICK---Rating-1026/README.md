@@ -58,7 +58,7 @@ YES
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-09T05:29:31.511Z  
+**Submitted:** 2026-08-09T05:31:26.932Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -73,7 +73,7 @@ int main()
         if(length%2 == 0)
         cout << "Yes\n";
         else{
-            if(x == 1)
+            if(x %2 == 1)
             cout << "Yes\n";
             else
             cout << "No\n";
