@@ -10,7 +10,7 @@ int main()
         if(length%2 == 0)
         cout << "Yes\n";
         else{
-            if(x == 1)
+            if(x %2 == 1)
             cout << "Yes\n";
             else
             cout << "No\n";
