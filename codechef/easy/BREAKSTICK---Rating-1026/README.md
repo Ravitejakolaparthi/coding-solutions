@@ -58,7 +58,7 @@ YES
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-09T05:24:02.721Z  
+**Submitted:** 2026-08-09T05:24:21.876Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -68,7 +68,7 @@ int main()
     int t;
     cin >> t;
     while(t--){
-        int length,x;
+        long long int length,x;
         cin >> length >> x;
         if(length%2 == 0)
         cout << "Yes\n";
