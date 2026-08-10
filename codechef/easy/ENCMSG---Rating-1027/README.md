@@ -55,7 +55,7 @@ sxuv
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-10T15:16:42.140Z  
+**Submitted:** 2026-08-10T16:48:45.589Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -76,7 +76,7 @@ int main()
         // if(n%2 == 0)
         // swap(s[n-2],s[n-1]);
         for(int i=0;i<n;i++){
-            s[i] = 'z' - (s[i] - 'a');
+            s[i] = 'z' + 'a'-s[i];
         }
         
         cout << s << endl;
