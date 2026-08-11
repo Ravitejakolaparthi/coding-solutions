@@ -15,7 +15,7 @@ public:
     int minSpeedOnTime(vector<int>& dist, double hour) {
        long long int low = 1;
        long long int high = 10000000;
-        if(hour < double(dist.size()-1))  return -1; 
+        if(hour <= double(dist.size()-1))  return -1; 
         while(low <= high){
            long long int mid = low + (high-low)/2;
             if(check(hour,mid,dist) == true){
@@ -25,6 +25,6 @@ public:
                 low = mid + 1;
             } 
         }
-        return high;
+        return low;
     }
 };
