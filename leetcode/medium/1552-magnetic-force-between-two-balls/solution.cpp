@@ -6,7 +6,7 @@ public:
         for(int i = 1;i<position.size();i++){
             if(position[i] - start >= limit){
                 m-=1;
-                start = position[i];
+                start = position[i]; // Because to maintain same gap between each ball;
             }
             if(m == 0)
             return true;
