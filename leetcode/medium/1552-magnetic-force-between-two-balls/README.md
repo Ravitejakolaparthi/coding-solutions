@@ -43,9 +43,9 @@ Explanation: We can use baskets 1 and 1000000000.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.2 MB  
-**Submitted:** 2026-08-11T12:09:20.052Z  
+**Runtime:** 48 ms (beats 57.78%)  
+**Memory:** 61.7 MB (beats 38.36%)  
+**Submitted:** 2026-08-11T12:09:27.836Z  
 
 ```cpp
 class Solution {
