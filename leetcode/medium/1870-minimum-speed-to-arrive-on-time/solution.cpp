@@ -1,16 +1,18 @@
 class Solution {
 public:
-	bool check(double hour,long long int limit,vector<int>&dist){
-		double hours = 0;
+	bool check(double hours,long long int limit,vector<int>&dist){
+		// double hours = 0;
 		int n = dist.size();
 				for(int i=0;i<n-1;i++){
 						
-						hours += (dist[i] + limit -1)/limit; 
+						hours -= (dist[i] + limit -1)/limit; 
+                        if(hours < 0)
+                        return false;
 						
 				}
-				hours+= double(dist.back())/limit;
+				hours-= double(dist[n-1])/limit;
 				
-				return hours <= hour;
+				return hours >= -1e-9;
 		}
     int minSpeedOnTime(vector<int>& dist, double hour) {
        long long int low = 1;
