@@ -64,24 +64,26 @@ Explanation: It is impossible because the earliest the third train can depart is
 ## Solution
 
 **Language:** C++  
-**Runtime:** 49 ms (beats 89.84%)  
-**Memory:** 105.3 MB (beats 98.33%)  
-**Submitted:** 2026-08-11T15:49:09.042Z  
+**Runtime:** 33 ms (beats 98.97%)  
+**Memory:** 105.5 MB (beats 23.99%)  
+**Submitted:** 2026-08-11T16:05:23.750Z  
 
 ```cpp
 class Solution {
 public:
-	bool check(double hour,long long int limit,vector<int>&dist){
-		double hours = 0;
+	bool check(double hours,long long int limit,vector<int>&dist){
+		// double hours = 0;
 		int n = dist.size();
 				for(int i=0;i<n-1;i++){
 						
-						hours += (dist[i] + limit -1)/limit; 
+						hours -= (dist[i] + limit -1)/limit; 
+                        if(hours < 0)
+                        return false;
 						
 				}
-				hours+= double(dist.back())/limit;
+				hours-= double(dist[n-1])/limit;
 				
-				return hours <= hour;
+				return hours >= -1e-9;
 		}
     int minSpeedOnTime(vector<int>& dist, double hour) {
        long long int low = 1;
