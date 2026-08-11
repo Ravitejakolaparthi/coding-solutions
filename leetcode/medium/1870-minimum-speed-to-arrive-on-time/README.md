@@ -64,9 +64,9 @@ Explanation: It is impossible because the earliest the third train can depart is
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.2 MB  
-**Submitted:** 2026-08-11T15:47:55.387Z  
+**Runtime:** 49 ms (beats 89.84%)  
+**Memory:** 105.3 MB (beats 98.33%)  
+**Submitted:** 2026-08-11T15:49:09.042Z  
 
 ```cpp
 class Solution {
@@ -86,7 +86,7 @@ public:
     int minSpeedOnTime(vector<int>& dist, double hour) {
        long long int low = 1;
        long long int high = 10000000;
-        if(hour < double(dist.size()-1))  return -1; 
+        if(hour <= double(dist.size()-1))  return -1; 
         while(low <= high){
            long long int mid = low + (high-low)/2;
             if(check(hour,mid,dist) == true){
@@ -96,7 +96,7 @@ public:
                 low = mid + 1;
             } 
         }
-        return high;
+        return low;
     }
 };
 ```
