@@ -73,11 +73,21 @@ It can be verified that using fewer than two operations is not enough to make $N
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T14:52:19.866Z  
+**Submitted:** 2026-08-12T15:11:24.868Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
+int solve(int n,int cnt){
+    if(n%3 == 0)
+    return cnt;
+    else{
+        cnt = min(solve(n+1,cnt),solve(ceil(n/3)*5,cnt));
+        
+    }
+    return cnt;
+    
+}
 int main()
 {
     int t;
@@ -85,35 +95,12 @@ int main()
     while(t--){
         int n;
         cin >> n;
-        int cnt;
-        if(n %  3 == 0){
-            cout << 0 <<endl;
-            break;
-        }
-        else{
-            while(n%3!=0){
-                
-                int sum = n*(n+1)/2;
-                if(sum % 3 == 0){
-                    cnt++;
-                    cout << cnt;
-                }
-                else{
-                    for(int i = n;i<=n+5;i++){
-                        if(i%5 == 0){
-                        n = i;
-                        cnt++;
-                        }
-                    }
-                    if(n%3 == 0)
-                    {
-                        cout << cnt
-                    }
-                }
-            }
-            
-        }
-        
+        int cnt = 0;
+        if(n%3 == 0)
+            cout << cnt << endl;
+        else
+         cnt = solve(n,0);
+
     }
     return 0;
 }
