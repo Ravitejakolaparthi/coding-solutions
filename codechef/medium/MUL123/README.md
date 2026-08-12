@@ -73,14 +73,48 @@ It can be verified that using fewer than two operations is not enough to make $N
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T14:42:11.863Z  
+**Submitted:** 2026-08-12T14:52:19.866Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 int main()
 {
-    
+    int t;
+    cin >> t;
+    while(t--){
+        int n;
+        cin >> n;
+        int cnt;
+        if(n %  3 == 0){
+            cout << 0 <<endl;
+            break;
+        }
+        else{
+            while(n%3!=0){
+                
+                int sum = n*(n+1)/2;
+                if(sum % 3 == 0){
+                    cnt++;
+                    cout << cnt;
+                }
+                else{
+                    for(int i = n;i<=n+5;i++){
+                        if(i%5 == 0){
+                        n = i;
+                        cnt++;
+                        }
+                    }
+                    if(n%3 == 0)
+                    {
+                        cout << cnt
+                    }
+                }
+            }
+            
+        }
+        
+    }
     return 0;
 }
 ```
