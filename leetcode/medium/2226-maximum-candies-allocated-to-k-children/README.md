@@ -41,9 +41,9 @@ Explanation: There are 11 children but only 7 candies in total, so it is impossi
 ## Solution
 
 **Language:** C++  
-**Runtime:** 47 ms (beats 9.99%)  
-**Memory:** 88.3 MB (beats 37.79%)  
-**Submitted:** 2026-08-14T09:28:44.634Z  
+**Runtime:** 20 ms (beats 84.06%)  
+**Memory:** 88.4 MB (beats 37.79%)  
+**Submitted:** 2026-08-14T09:30:56.949Z  
 
 ```cpp
 class Solution {
@@ -57,10 +57,7 @@ public:
     }
     int maximumCandies(vector<int>& candies, long long k) {
         long long int low = 1;
-        long long int high = 0;
-        for(int i =0;i<candies.size();i++){
-            high += candies[i];
-        }
+        long long int high = *max_element(candies.begin(),candies.end());
         while(low <= high){
             long long int mid = low + (high-low)/2;
             if(check(mid,k,candies)){
