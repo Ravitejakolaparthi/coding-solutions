@@ -1,0 +1,87 @@
+# Split Array Largest Sum
+
+![Difficulty](https://img.shields.io/badge/Difficulty-Hard-red)
+
+## Problem
+
+Given an integer array `nums` and an integer `k`, split `nums` into `k` non-empty subarrays such that the largest sum of any subarray is  **minimized**.
+
+Return  *the minimized largest sum of the split*.
+
+A  **subarray**  is a contiguous part of the array.
+
+ 
+
+ **Example 1:** 
+
+```
+Input: nums = [7,2,5,10,8], k = 2
+Output: 18
+Explanation: There are four ways to split nums into two subarrays.
+The best way is to split it into [7,2,5] and [10,8], where the largest sum among the two subarrays is only 18.
+
+```
+
+ **Example 2:** 
+
+```
+Input: nums = [1,2,3,4,5], k = 2
+Output: 9
+Explanation: There are four ways to split nums into two subarrays.
+The best way is to split it into [1,2,3] and [4,5], where the largest sum among the two subarrays is only 9.
+
+```
+
+ 
+
+ **Constraints:** 
+
+- 1 <= nums.length <= 1000
+- 0 <= nums[i] <= 106
+- 1 <= k <= min(50, nums.length)
+
+## Solution
+
+**Language:** C++  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 10.4 MB (beats 73.99%)  
+**Submitted:** 2026-08-14T06:29:59.663Z  
+
+```cpp
+class Solution {
+public:
+    	bool check(int limit,int k,vector<int>&nums){
+		int sum = 0;
+		//k-=1;
+		for(int i = 0;i<nums.size();i++){
+			if(sum + nums[i] <= limit){
+				sum += nums[i];
+			}
+			else{
+				k--;
+				sum = nums[i];
+			}
+		}
+		return k <= 0;
+	}
+    int splitArray(vector<int>& nums, int k) {
+        int low = *max_element(nums.begin(),nums.end());
+        int high = 0;
+        for(int i = 0;i<nums.size();i++) high += nums[i];
+        while(low <= high){
+            int mid = low + (high-low)/2;
+            if(check(mid,k,nums)){
+                low = mid+1;
+            }
+            else{
+                high = mid -1;
+            }
+        }
+        return low;
+    }
+};
+```
+
+---
+
+[View on LeetCode](https://leetcode.com/problems/split-array-largest-sum/)
