@@ -9,10 +9,7 @@ public:
     }
     int maximumCandies(vector<int>& candies, long long k) {
         long long int low = 1;
-        long long int high = 0;
-        for(int i =0;i<candies.size();i++){
-            high += candies[i];
-        }
+        long long int high = *max_element(candies.begin(),candies.end());
         while(low <= high){
             long long int mid = low + (high-low)/2;
             if(check(mid,k,candies)){
