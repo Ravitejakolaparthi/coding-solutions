@@ -9,9 +9,9 @@ public:
             if(s[j] >= g[i]){
                 cnt++;
                 i++;
-                j++;
+                // j++;
             }
-            else
+            // else
             j++;
         }
         return cnt;
