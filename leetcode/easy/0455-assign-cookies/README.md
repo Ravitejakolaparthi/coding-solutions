@@ -47,9 +47,9 @@ You need to output 2.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 12 ms (beats 28.94%)  
-**Memory:** 44.9 MB (beats 48.28%)  
-**Submitted:** 2026-08-17T09:36:16.239Z  
+**Runtime:** 0 ms  
+**Memory:** 8.2 MB  
+**Submitted:** 2026-08-17T09:36:50.034Z  
 
 ```cpp
 class Solution {
@@ -63,9 +63,9 @@ public:
             if(s[j] >= g[i]){
                 cnt++;
                 i++;
-                j++;
+                // j++;
             }
-            else
+            // else
             j++;
         }
         return cnt;
