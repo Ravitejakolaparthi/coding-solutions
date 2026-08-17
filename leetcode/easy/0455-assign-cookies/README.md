@@ -47,9 +47,9 @@ You need to output 2.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.2 MB  
-**Submitted:** 2026-08-17T09:36:50.034Z  
+**Runtime:** 7 ms (beats 71.39%)  
+**Memory:** 44.9 MB (beats 48.28%)  
+**Submitted:** 2026-08-17T09:37:48.410Z  
 
 ```cpp
 class Solution {
@@ -57,18 +57,18 @@ public:
     int findContentChildren(vector<int>& g, vector<int>& s) {
         sort(g.begin(),g.end());
         sort(s.begin(),s.end());
-        int cnt = 0;
+        // int cnt = 0;
         int i = 0,j =0;
         while(i < g.size() && j < s.size()){
             if(s[j] >= g[i]){
-                cnt++;
+                // cnt++;
                 i++;
                 // j++;
             }
             // else
             j++;
         }
-        return cnt;
+        return i;
     }
 };
 ```
