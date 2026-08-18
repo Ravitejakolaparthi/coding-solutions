@@ -48,9 +48,9 @@ Explanation: You don't need to remove any of the intervals since they're already
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.3 MB  
-**Submitted:** 2026-08-18T10:38:24.671Z  
+**Runtime:** 1515 ms (beats 8.33%)  
+**Memory:** 94 MB (beats 68.90%)  
+**Submitted:** 2026-08-18T10:38:31.596Z  
 
 ```cpp
 
