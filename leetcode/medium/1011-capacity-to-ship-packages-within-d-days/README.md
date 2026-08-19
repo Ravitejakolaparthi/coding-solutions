@@ -63,9 +63,9 @@ Explanation:
 ## Solution
 
 **Language:** C++  
-**Runtime:** 11 ms (beats 64.76%)  
-**Memory:** 34.9 MB (beats 89.00%)  
-**Submitted:** 2026-08-14T05:28:50.835Z  
+**Runtime:** 11 ms (beats 64.90%)  
+**Memory:** 35.2 MB (beats 19.96%)  
+**Submitted:** 2026-08-19T13:21:20.561Z  
 
 ```cpp
 class Solution {
@@ -87,7 +87,7 @@ public:
     }
     int shipWithinDays(vector<int>& weights, int days) {
         // sort(weights.begin(),weights.end());
-        int low = *max_element(weights.begin(), weights.end());
+        int low = *max_element(weights.begin(), weights.end()); // Becasue if you take one we must split products wich is not efficent so we take some other low so among all we take max so it can allow products one at a time
         int high = 0;
         for(int i=0;i<weights.size();i++){
             high += weights[i];
