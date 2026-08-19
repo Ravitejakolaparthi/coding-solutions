@@ -17,7 +17,7 @@ public:
     }
     int shipWithinDays(vector<int>& weights, int days) {
         // sort(weights.begin(),weights.end());
-        int low = *max_element(weights.begin(), weights.end());
+        int low = *max_element(weights.begin(), weights.end()); // Becasue if you take one we must split products wich is not efficent so we take some other low so among all we take max so it can allow products one at a time
         int high = 0;
         for(int i=0;i<weights.size();i++){
             high += weights[i];
