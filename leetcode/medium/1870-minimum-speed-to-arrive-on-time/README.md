@@ -64,9 +64,9 @@ Explanation: It is impossible because the earliest the third train can depart is
 ## Solution
 
 **Language:** C++  
-**Runtime:** 33 ms (beats 98.97%)  
-**Memory:** 105.5 MB (beats 23.99%)  
-**Submitted:** 2026-08-11T16:05:23.750Z  
+**Runtime:** 36 ms (beats 98.44%)  
+**Memory:** 105.3 MB (beats 98.13%)  
+**Submitted:** 2026-08-20T17:28:10.333Z  
 
 ```cpp
 class Solution {
