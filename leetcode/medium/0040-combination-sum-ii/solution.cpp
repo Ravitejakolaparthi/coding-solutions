@@ -20,7 +20,7 @@ public:
                 v.push_back(n[i]);
                 move(n,s-n[i],v,i+1);
                 v.pop_back();
-                while(i+1 < n.size() &&n[i] == n[i+1])
+                while(i+1 < n.size() &&n[i] == n[i+1]) // skipping Duplicates Like Jumping to different element
                 i++;
                 move(n,s,v,i+1);
             }
