@@ -49,9 +49,9 @@ Output:
 ## Solution
 
 **Language:** C++  
-**Runtime:** 99 ms (beats 5.29%)  
-**Memory:** 41.8 MB (beats 5.13%)  
-**Submitted:** 2026-07-31T17:34:02.873Z  
+**Runtime:** 115 ms (beats 5.06%)  
+**Memory:** 41.7 MB (beats 5.36%)  
+**Submitted:** 2026-08-24T17:05:11.164Z  
 
 ```cpp
 class Solution {
@@ -76,7 +76,7 @@ public:
                 v.push_back(n[i]);
                 move(n,s-n[i],v,i+1);
                 v.pop_back();
-                while(i+1 < n.size() &&n[i] == n[i+1])
+                while(i+1 < n.size() &&n[i] == n[i+1]) // skipping Duplicates Like Jumping to different element
                 i++;
                 move(n,s,v,i+1);
             }
