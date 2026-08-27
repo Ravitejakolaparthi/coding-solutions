@@ -1,0 +1,59 @@
+
+#include <bits/stdc++.h>
+#define f first
+#define s second
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin >> t;
+	while(t--){
+	    int n;
+	    cin >>n;
+	    vector<long long int>v(n);
+	    vector<int>ans;
+	    string S;
+	    for(int i = 0;i<n;i++) 
+	    cin >> v[i];
+	    cin >> S;
+	    vector<pair<char,int>>p;
+	    for(int i = 0;i<n;i++)
+	        p.push_back({S[i],v[i]});
+	   // for(int i = 0;i<n;i++)
+	   //     cout << p[i].f << "->" << p[i].s <<endl;
+	    int val = p[0].s;
+	    int j = 0;
+	    for(j = 0;j<n-1;j++){
+	        if(p[j].f == p[j+1].f){
+	            val = max(val,p[j+1].s);
+	        }
+	        else{
+	            ans.push_back(val);
+	            val = p[j+1].s;
+	        }
+	    }
+	    j--;
+	    if(S[j] == S[j+1]){
+	        val = max(val,p[j+1].s);
+	        ans.push_back(val);
+	    }
+	    else{
+	        ans.push_back(p[j+1].s);
+	    }
+	    if(S[0] == S[n-1]){
+	        ans.front() = max(ans.front(),ans.back());
+	        ans.pop_back();
+	    }
+	    int m = ans.size();
+	    sort(ans.begin(),ans.end());
+	    int long long sum = ans[m-1]+ ans[m-2];
+	    cout << sum <<endl;
+	       
+	   
+	    
+	    
+	}
+	
+
+}
