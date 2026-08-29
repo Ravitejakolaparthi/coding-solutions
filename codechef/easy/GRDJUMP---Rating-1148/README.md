@@ -65,7 +65,7 @@ For the given costs, this is optimal.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-29T06:09:38.082Z  
+**Submitted:** 2026-08-29T06:12:26.923Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -86,9 +86,9 @@ int main()
         int cost_d =0;
         int cost_D =0;
         for(i = 0;i<=j;i++){
-            cost_d = r*i;
-            cost_D =((a+1-i)/2)*p+((b+1-i)/2)*q+cost_d;
-         cost = min(cost,cost_D);
+        cost_d = r*i;
+        cost_D =((a+1-i)/2)*p+((b+1-i)/2)*q+cost_d;
+        cost = min(cost,cost_D);
         }
        
         cout << cost <<endl;
