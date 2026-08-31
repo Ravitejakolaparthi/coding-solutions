@@ -43,9 +43,9 @@ Explanation: We can use baskets 1 and 1000000000.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 54 ms (beats 27.42%)  
-**Memory:** 61.8 MB (beats 7.15%)  
-**Submitted:** 2026-08-11T12:11:07.007Z  
+**Runtime:** 46 ms (beats 72.17%)  
+**Memory:** 61.7 MB (beats 37.90%)  
+**Submitted:** 2026-08-31T15:13:38.193Z  
 
 ```cpp
 class Solution {
@@ -56,7 +56,7 @@ public:
         for(int i = 1;i<position.size();i++){
             if(position[i] - start >= limit){
                 m-=1;
-                start = position[i]; // Because to maintain same gap between each ball;
+                start = position[i];
             }
             if(m == 0)
             return true;
