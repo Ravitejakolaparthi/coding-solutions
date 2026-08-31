@@ -51,9 +51,9 @@ Output: false
 ## Solution
 
 **Language:** C++  
-**Runtime:** 911 ms (beats 8.06%)  
-**Memory:** 11.9 MB (beats 12.95%)  
-**Submitted:** 2026-07-24T15:47:19.837Z  
+**Runtime:** 929 ms (beats 7.26%)  
+**Memory:** 11.8 MB (beats 12.88%)  
+**Submitted:** 2026-08-31T15:31:00.915Z  
 
 ```cpp
 class Solution {
