@@ -44,9 +44,9 @@ Explanation: The empty subsequence is the only subsequence that has a sum less t
 ## Solution
 
 **Language:** C++  
-**Runtime:** 5 ms (beats 40.81%)  
-**Memory:** 18.3 MB (beats 10.06%)  
-**Submitted:** 2026-07-31T05:36:07.362Z  
+**Runtime:** 5 ms (beats 41.96%)  
+**Memory:** 18.1 MB (beats 26.79%)  
+**Submitted:** 2026-08-31T08:43:15.572Z  
 
 ```cpp
 class Solution {
