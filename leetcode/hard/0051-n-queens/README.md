@@ -38,9 +38,9 @@ Output: [["Q"]]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 42 ms (beats 6.51%)  
-**Memory:** 50 MB (beats 5.04%)  
-**Submitted:** 2026-07-25T06:07:27.027Z  
+**Runtime:** 46 ms (beats 5.71%)  
+**Memory:** 50.2 MB (beats 5.00%)  
+**Submitted:** 2026-08-31T15:47:17.132Z  
 
 ```cpp
 class Solution {
