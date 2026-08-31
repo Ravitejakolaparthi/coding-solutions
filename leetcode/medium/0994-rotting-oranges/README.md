@@ -55,8 +55,8 @@ Explanation: Since there are already no fresh oranges at minute 0, the answer is
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 17 MB (beats 39.88%)  
-**Submitted:** 2026-07-24T03:17:31.436Z  
+**Memory:** 17.3 MB (beats 16.68%)  
+**Submitted:** 2026-08-31T15:31:26.332Z  
 
 ```cpp
 class Solution {
