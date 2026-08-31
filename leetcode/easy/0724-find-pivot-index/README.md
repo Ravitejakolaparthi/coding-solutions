@@ -62,8 +62,8 @@ Right sum = nums[1] + nums[2] = 1 + -1 = 0
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 37.2 MB (beats 5.12%)  
-**Submitted:** 2026-07-29T10:28:33.555Z  
+**Memory:** 37.2 MB (beats 10.66%)  
+**Submitted:** 2026-08-31T08:42:25.374Z  
 
 ```cpp
 class Solution {
