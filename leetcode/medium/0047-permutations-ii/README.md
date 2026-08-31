@@ -37,9 +37,9 @@ Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 85 ms (beats 6.12%)  
-**Memory:** 36.9 MB (beats 5.00%)  
-**Submitted:** 2026-07-14T04:09:01.180Z  
+**Runtime:** 83 ms (beats 5.67%)  
+**Memory:** 37.1 MB (beats 5.07%)  
+**Submitted:** 2026-08-31T15:44:54.374Z  
 
 ```cpp
 class Solution {
