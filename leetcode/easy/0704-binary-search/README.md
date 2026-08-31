@@ -40,21 +40,29 @@ Explanation: 2 does not exist in nums so return -1
 ## Solution
 
 **Language:** C  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 10 MB (beats 44.58%)  
-**Submitted:** 2026-08-31T15:21:02.173Z  
+**Runtime:** 0 ms  
+**Memory:** 8.5 MB  
+**Submitted:** 2026-08-31T15:25:13.365Z  
 
 ```c
-int search(int* nums, int numsSize, int target)
- {
-   int i=0;
-    while(numsSize--)
-    {
-       if(target == nums[i]) 
-        return i;
-       i++;
+int search(int* nums, int numsSize, int target) {
+ int low=0,high=numsSize-1;
+
+    while(low<=high){
+        int mid=low+(high-low)/2;
+
+        if(target==nums[mid]){
+            return mid;
+        }
+        else if(target>nums[mid]){
+            low=mid+1;
+        }
+        else{
+            high=mid-1;
+        }
     }
-     return -1;
+
+    return -1;   
 }
 ```
 
