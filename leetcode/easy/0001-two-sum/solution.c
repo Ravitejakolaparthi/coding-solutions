@@ -1,0 +1,23 @@
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
+    int *result=(int*)malloc(2*sizeof(int));
+    *returnSize =2;
+    int i,j;
+    int n=numsSize;
+    for(i=0;i<n;i++)
+    {
+        for(j=i+1;j<n;j++)
+        {
+            if(nums[i]+nums[j]==target)
+        {
+              result[0]=i;
+             result[1]=j;
+              return result;
+        }
+     
+        }
+    }
+    return 0;
+}
