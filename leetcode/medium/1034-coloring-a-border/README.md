@@ -57,8 +57,8 @@ Output: [[2,2,2],[2,1,2],[2,2,2]]
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 18.2 MB (beats 42.19%)  
-**Submitted:** 2026-07-23T08:23:06.079Z  
+**Memory:** 18.3 MB (beats 41.62%)  
+**Submitted:** 2026-08-31T15:37:32.332Z  
 
 ```cpp
 class Solution {
