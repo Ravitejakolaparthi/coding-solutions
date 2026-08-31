@@ -44,8 +44,8 @@ The best way is to split it into [1,2,3] and [4,5], where the largest sum among 
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 10.4 MB (beats 73.99%)  
-**Submitted:** 2026-08-14T06:29:59.663Z  
+**Memory:** 10.6 MB (beats 10.77%)  
+**Submitted:** 2026-08-31T15:14:53.215Z  
 
 ```cpp
 class Solution {
