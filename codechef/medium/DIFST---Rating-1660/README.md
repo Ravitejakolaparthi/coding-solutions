@@ -82,7 +82,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-01T04:28:27.836Z  
+**Submitted:** 2026-09-01T04:29:15.058Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -115,12 +115,12 @@ int main()
             ans.push_back(x);
             swap(arr[i],arr[j]);
         }
-        cout << ans.size() <<endl;
+        cout << ans.size() << endl;
         for(int k = 0;k<n;k++){
             for(int l = 0;l<2;i++){
-                cout << ans[k][l] <<end;
+                cout << ans[k][l] << end;
             }
-            cout <<endl;
+            cout << "\n";
         }
     }
     return 0;
