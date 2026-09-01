@@ -82,7 +82,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-01T04:29:15.058Z  
+**Submitted:** 2026-09-01T04:31:27.845Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -104,8 +104,8 @@ int main()
         int i = 0;
         int j = 0;
         for(i = 0;i<n;i++){
-            for( j=i+1;j<n-1;j++){
-                if(abs(arr[i]==arr[j]) == abs(i-j)){
+            for(j=i+1;j<n-1;j++){
+                if(abs(arr[i]==arr[j]) >= abs(i-j)){
                     if(power>abs(i-j)){
                         x = {arr[i],arr[j]};
                         power = abs(i-j);
@@ -118,7 +118,7 @@ int main()
         cout << ans.size() << endl;
         for(int k = 0;k<n;k++){
             for(int l = 0;l<2;i++){
-                cout << ans[k][l] << end;
+                cout << ans[k][l] << endl;
             }
             cout << "\n";
         }
