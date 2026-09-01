@@ -30,7 +30,7 @@ int main()
             ans.push_back(x);
             swap(arr[i],arr[j]);
         }
-        cout << ans.size()<<"\n";
+        cout << ans.size() << endl;
         for(int k = 0;k<n;k++){
             for(int l = 0;l<2;l++){
                 if(ans[k][l] != 0)
