@@ -63,9 +63,9 @@ Explanation: Same as Example 1, except with the 5 in the top left corner being m
 ## Solution
 
 **Language:** C++  
-**Runtime:** 10 ms (beats 14.38%)  
-**Memory:** 25.2 MB (beats 29.99%)  
-**Submitted:** 2026-08-31T15:47:41.231Z  
+**Runtime:** 23 ms (beats 5.53%)  
+**Memory:** 25.4 MB (beats 22.65%)  
+**Submitted:** 2026-09-01T16:58:33.356Z  
 
 ```cpp
 class Solution {
