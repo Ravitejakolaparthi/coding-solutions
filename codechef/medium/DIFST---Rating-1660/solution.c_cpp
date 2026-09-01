@@ -7,8 +7,8 @@ int main()
     while(t--){
         int n;
         cin >> n;
-        vector<int>arr(n);
-        for(int i = 0;i<n;i++){
+        vector<int>arr(n+1); // creating 1 - based index
+        for(int i = 1;i<=n;i++){
             cin >> arr[i];
         }
         int power = 999999999;
@@ -16,24 +16,29 @@ int main()
         vector<int>x = {0,0};
         int i = 0;
         int j = 0;
-        for(i = 0;i<n;i++){
-            x={0,0};
-            power = 999999999;
-            for(j=i+1;j<n-1;j++){
+        for(i = 1;i<=n;i++){
+            int best_j = -1;
+            x={0,0};  // retaking x
+            power = 999999999; // reinstalling power
+            for(j=i+1;j<=n;j++){
                 if(abs(arr[i]-arr[j]) >= abs(i-j)){
                     if(power>abs(i-j)){
-                        x = {arr[i],arr[j]};
+                        x = {arr[i],arr[j]}; // least power
                         power = abs(i-j);
+                        best_j = j;
                     }
                 }
             }
-            ans.push_back(x);
-            swap(arr[i],arr[j]);
+            if(best_j!= -1){
+            ans.push_back(x); // found minimum powered x 
+            swap(arr[i],arr[j]); // swapping the elements in x
+            }
+            
         }
-        cout << ans.size() << endl;
-        for(int k = 0;k<n;k++){
+        cout << ans.size()<<"\n";
+        for(int k = 0;k<ans.size();k++){
             for(int l = 0;l<2;l++){
-                if(ans[k][l] != 0)
+                // if(ans[k][l] != 0)
                 cout << ans[k][l] <<" ";
             }
             cout << "\n";
