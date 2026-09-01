@@ -82,7 +82,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-01T04:58:14.804Z  
+**Submitted:** 2026-09-01T08:30:26.727Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -109,16 +109,16 @@ int main()
             power = 999999999; // reinstalling power
             for(j=i+1;j<=n;j++){
                 if(abs(arr[i]-arr[j]) >= abs(i-j)){
-                    if(power>abs(i-j)){
-                        x = {arr[i],arr[j]}; // least power
+                    if(power>=abs(i-j)){
+                        x = {i,j}; // least power
                         power = abs(i-j);
                         best_j = j;
                     }
                 }
             }
             if(best_j!= -1){
-            ans.push_back(x); // found minimum powered x 
-            swap(arr[i],arr[j]); // swapping the elements in x
+                ans.push_back(x); // found minimum powered x 
+                swap(arr[i],arr[best_j]); // swapping the elements in x
             }
             
         }
