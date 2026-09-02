@@ -51,11 +51,17 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T14:44:46.619Z  
+**Submitted:** 2026-09-02T14:54:45.038Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
+int solve(vector<int>v,int s,int k,int l,int r){
+     if(k > 0){
+        s = max(solve(v,s-v[l],k,l++,r),solve(v,s-v[r],k,l,r--));
+     }
+}
+
 int main()
 {
     int t;
@@ -66,26 +72,12 @@ int main()
         cin >> n;
         cin >> k;
         vector<int>arr(n);
-        for(int i = 0;i<n;i++) cin >> arr[i];
-        
-        int l = 0,r = n-1;
-        while(k>0){
-           int j = 0;
-           if(arr[l] > arr[r]){
-               j = r;
-               r--;
-           }else{
-               j = l;
-               l++;
-           }
-           arr[j] = 0;
-           k--;
-        }
-        int sum = 0;
-        for(int i = 0;i<n;i++){
+        for(int i = 0;i<n;i++)
+        {cin >> arr[i];
             sum += arr[i];
         }
-        cout << sum <<endl;
+        int ans = solve(arr,sum,k,0,n-1);
+        cout << ans <<endl;
     }
     return 0;
 }
