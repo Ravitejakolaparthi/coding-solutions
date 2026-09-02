@@ -51,7 +51,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T14:38:41.628Z  
+**Submitted:** 2026-09-02T14:44:37.624Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -65,7 +65,27 @@ int main()
         int n;
         cin >> n;
         cin >> k;
-        for(int i = 0;i<n;i++) cin >> 
+        vector<int>arr(n);
+        for(int i = 0;i<n;i++) cin >> arr[i];
+        
+        int l = 0,r = n-1;
+        while(k>0){
+           int j = 0;
+           if(arr[l] > arr[r]){
+               j = r;
+               r--;
+           }else{
+               j = l;
+               l++;
+           }
+           arr[j] = 0;
+           k--;
+        }
+        int sum = 0;
+        for(int i = 0;i<n;i++){
+            sum += arr[i];
+        }
+        cout << sum <<endl;
     }
     return 0;
 }
