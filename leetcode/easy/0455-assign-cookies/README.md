@@ -47,9 +47,9 @@ You need to output 2.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 7 ms (beats 71.39%)  
-**Memory:** 44.9 MB (beats 48.28%)  
-**Submitted:** 2026-08-17T09:37:48.410Z  
+**Runtime:** 16 ms (beats 9.77%)  
+**Memory:** 44.9 MB (beats 12.06%)  
+**Submitted:** 2026-09-02T05:51:13.463Z  
 
 ```cpp
 class Solution {
