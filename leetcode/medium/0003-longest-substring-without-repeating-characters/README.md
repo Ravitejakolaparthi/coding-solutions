@@ -46,9 +46,9 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 7.8 MB  
-**Submitted:** 2026-09-03T17:07:13.805Z  
+**Runtime:** 383 ms (beats 5.04%)  
+**Memory:** 131.5 MB (beats 5.06%)  
+**Submitted:** 2026-09-03T17:15:16.964Z  
 
 ```cpp
 class Solution {
@@ -62,21 +62,21 @@ public:
         for(int i = 0;i<n;i++){
             if(mp.find(s[i]) == mp.end())
             {
-                k++;                        // p  w 
+                                // p  w 
                 mp[s[i]] = 1;
                 size = mp.size();
                 maxsize = max(size,maxsize);
             }
             else{
-                int j = i;
                 while(mp.find(s[i]) != mp.end()){  // p w // w // 0 // w
-                    mp.erase(s[j-k]);
-                    size = mp.size();
-                    maxsize = max(size,maxsize);
-                    j++;
+                    mp.erase(s[k]);
+                    k++;
+                 
+                    
                 }
                 mp[s[i]] = 1;
-                size = 0;
+                size = mp.size();
+                maxsize = max(size,maxsize);
             }
         }
         return maxsize;
