@@ -9,21 +9,21 @@ public:
         for(int i = 0;i<n;i++){
             if(mp.find(s[i]) == mp.end())
             {
-                k++;                        // p  w 
+                                // p  w 
                 mp[s[i]] = 1;
                 size = mp.size();
                 maxsize = max(size,maxsize);
             }
             else{
-                int j = i;
                 while(mp.find(s[i]) != mp.end()){  // p w // w // 0 // w
-                    mp.erase(s[j-k]);
-                    size = mp.size();
-                    maxsize = max(size,maxsize);
-                    j++;
+                    mp.erase(s[k]);
+                    k++;
+                 
+                    
                 }
                 mp[s[i]] = 1;
-                size = 0;
+                size = mp.size();
+                maxsize = max(size,maxsize);
             }
         }
         return maxsize;
