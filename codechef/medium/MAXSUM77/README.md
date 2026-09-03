@@ -51,33 +51,33 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T14:54:45.038Z  
+**Submitted:** 2026-09-03T01:17:26.473Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
-int solve(vector<int>v,int s,int k,int l,int r){
-     if(k > 0){
-        s = max(solve(v,s-v[l],k,l++,r),solve(v,s-v[r],k,l,r--));
-     }
-}
-
 int main()
 {
+    
     int t;
     cin >> t;
     while(t--){
-        int k;
         int n;
-        cin >> n;
-        cin >> k;
-        vector<int>arr(n);
-        for(int i = 0;i<n;i++)
-        {cin >> arr[i];
-            sum += arr[i];
+        int k;
+        cin >> n >> k;
+        vector<int>v(n);
+        for(int i = 0;i<n;i++) cin >> v[i];
+         k = n - k;
+        int sum = 0;
+        for(int i = 0;i<k;i++){
+            sum += v[i];
         }
-        int ans = solve(arr,sum,k,0,n-1);
-        cout << ans <<endl;
+        int maxS = sum;
+        for(int i = k;i<n;i++){
+            sum = sum + v[i] - v[i-k];
+            maxS = max(maxS,sum);
+        }
+        cout << maxS <<endl;
     }
     return 0;
 }
