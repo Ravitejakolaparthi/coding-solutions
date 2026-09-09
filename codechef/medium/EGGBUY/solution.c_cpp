@@ -6,6 +6,6 @@ int main()
     cin >> x >> y >>s;
     int a = x*12;
     int b = y*12 + s;
-    cout << max(a,b) <<endl;
+    cout << min(a,b) <<endl;
     return 0;
 }
