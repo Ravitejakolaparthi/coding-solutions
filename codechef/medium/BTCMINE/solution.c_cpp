@@ -10,10 +10,13 @@ int main()
         cin >> x >> y;
         int amount = 0;
         int k = 0;
-        while(amount > 0){
+        while(amount <= 0){
             k++;
             c++;
             amount += (y*pow(k,2) - x);
+            
+            if(amount + (y*pow(k,2)-x) > 0)break;
+            if()
         }
         cout << c <<endl;
     }
