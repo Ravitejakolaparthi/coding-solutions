@@ -77,7 +77,7 @@ It can be shown that this is optimal.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T15:26:57.385Z  
+**Submitted:** 2026-09-09T15:32:03.784Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -97,11 +97,11 @@ int main()
         for(int i = 0;i<n;i++){
             mp[v[i]]++;
         }
-        int freq =1;
+        int freq =0;
         for(auto i = mp.begin();i!=mp.end();i++){
-            freq = max(freq,(i->second)-1);
+            freq = max(freq,(i->second));
         }
-        cout << freq <<endl;
+        cout << (freq+1)/2 <<endl;
     }
     return 0;
 }
