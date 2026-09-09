@@ -74,7 +74,7 @@ So, no solution exists.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T14:39:39.282Z  
+**Submitted:** 2026-09-09T14:43:23.148Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -89,6 +89,8 @@ int main()
         cin >> s1 >>s2;
         int c1 = 0;
         int c2 = 0;
+        int c3 =0;
+        int c4 = 0;
         for(int i = 0;i<s1.length();i++){
             if(s1[i] == 'a')
             c1++;
