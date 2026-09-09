@@ -65,7 +65,7 @@ It can be verified that there's no way to make a positive profit by the end of t
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T15:07:28.041Z  
+**Submitted:** 2026-09-09T16:21:30.068Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -81,12 +81,13 @@ int main()
         int amount = 0;
         int k = 0;
         while(amount <= 0){
-            k++;
+            
             c++;
+            amount += (y*pow(k,2) - x);
+            k++;
             amount += (y*pow(k,2) - x);
             
             if(amount + (y*pow(k,2)-x) > 0)break;
-            if()
         }
         cout << c <<endl;
     }
