@@ -65,7 +65,7 @@ It can be verified that there's no way to make a positive profit by the end of t
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T15:07:19.950Z  
+**Submitted:** 2026-09-09T15:07:28.041Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
