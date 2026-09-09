@@ -74,7 +74,7 @@ So, no solution exists.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T14:43:23.148Z  
+**Submitted:** 2026-09-09T14:46:01.021Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -96,8 +96,12 @@ int main()
             c1++;
             if(s2[i] == 'a')
             c2++;
+            if(s1[i] == 'b')
+            c3++;
+            if(s2[i] == 'b')
+            c4++;
         }
-        if(c1 == c2)
+        if(c1+c2 == c3 +c4)
         cout <<"YES\n";
         else cout << "NO\n";
     }
