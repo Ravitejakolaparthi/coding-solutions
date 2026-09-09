@@ -65,11 +65,21 @@ It can be verified that there's no way to make a positive profit by the end of t
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T16:21:34.038Z  
+**Submitted:** 2026-09-09T16:26:46.275Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
+int solve(int amount,int x,int y,int k,int c){
+    if(amount > 0){
+        return c;
+    }
+    else{
+        amount += x - y*pow(k,2); 
+        solve(amount,x,y,k,c+1);
+        solve(amount,x,y,k+1,c+1);
+    }
+}
 int main()
 {
     int t;
@@ -79,17 +89,8 @@ int main()
         int c = 0;
         cin >> x >> y;
         int amount = 0;
-        int k = 0;
-        while(amount <= 0){
-            
-            c++;
-            amount += (y*pow(k,2) - x);
-            k++;
-            amount += (y*pow(k,2) - x);
-            
-            if(amount + (y*pow(k,2)-x) > 0)break;
-        }
-        cout << c <<endl;
+        int k = 1;
+        cout << solve(amount,x,y,k,c) <<endl;
     }
     return 0;
 }
