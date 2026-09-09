@@ -68,7 +68,7 @@ It's better to buy from the second shop, spending $53$ coins.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T14:35:23.488Z  
+**Submitted:** 2026-09-09T14:35:42.488Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -79,7 +79,7 @@ int main()
     cin >> x >> y >>s;
     int a = x*12;
     int b = y*12 + s;
-    cout << max(a,b) <<endl;
+    cout << min(a,b) <<endl;
     return 0;
 }
 ```
