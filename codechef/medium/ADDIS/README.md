@@ -77,7 +77,7 @@ It can be shown that this is optimal.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T15:23:37.895Z  
+**Submitted:** 2026-09-09T15:25:00.558Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -99,7 +99,7 @@ int main()
         }
         int freq =1;
         for(auto i = mp.begin();i!=mp.end();i++){
-            freq = max(freq,(i->second)-1);
+            freq = min(freq,(i->second));
         }
         cout << freq <<endl;
     }
