@@ -74,7 +74,7 @@ So, no solution exists.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T14:46:01.021Z  
+**Submitted:** 2026-09-09T14:47:09.856Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -84,6 +84,8 @@ int main()
     int t;
     cin >> t;
     while(t--){
+        int n;
+        cin >> n;
         string s1;
         string s2;
         cin >> s1 >>s2;
