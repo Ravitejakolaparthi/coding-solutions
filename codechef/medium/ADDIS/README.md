@@ -77,14 +77,32 @@ It can be shown that this is optimal.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T15:11:05.187Z  
+**Submitted:** 2026-09-09T15:23:37.895Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 int main()
 {
-    
+    int t;
+    cin >> t;
+    while(t--){
+        int n;
+        cin >>n;
+        vector<int>v(n);
+        for(int i = 0;i<n;i++){
+            cin >> v[i];
+        }
+        map<int,int>mp;
+        for(int i = 0;i<n;i++){
+            mp[v[i]]++;
+        }
+        int freq =1;
+        for(auto i = mp.begin();i!=mp.end();i++){
+            freq = max(freq,(i->second)-1);
+        }
+        cout << freq <<endl;
+    }
     return 0;
 }
 ```
