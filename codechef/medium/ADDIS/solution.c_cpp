@@ -17,7 +17,7 @@ int main()
         }
         int freq =1;
         for(auto i = mp.begin();i!=mp.end();i++){
-            freq = min(freq,(i->second));
+            freq = max(freq,(i->second)-1);
         }
         cout << freq <<endl;
     }
