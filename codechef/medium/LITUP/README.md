@@ -76,14 +76,24 @@ $5$ is the minimum cost needed to achieve this.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T15:30:36.435Z  
+**Submitted:** 2026-09-23T15:37:15.438Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 int main()
 {
-    
+    int t;
+    cin >> t;
+    while(t--){
+        int n;
+        int k;
+        cin >> n >> k;
+        if(n> k*6)
+        cout << -1 <<endl;
+        else{
+            
+        }
     return 0;
 }
 ```
