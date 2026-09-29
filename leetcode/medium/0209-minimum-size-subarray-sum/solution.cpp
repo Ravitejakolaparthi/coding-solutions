@@ -1,8 +1,8 @@
 class Solution {
 public:
     int minSubArrayLen(int target, vector<int>& nums) {
-        int sum = nums[0];
-        int size = 99999999;
+        int sum = 0;
+        int size = nums.size()+1;
         int back = 0 , front = 0;
         while(front < nums.size()){
             sum += nums[front];
@@ -13,8 +13,7 @@ public:
             }
             front++;
         }
-        if(size == 99999999)
-        return 0;
+        if(size == nums.size()+1) return 0;
         else
         return size;
     }
