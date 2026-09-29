@@ -48,16 +48,16 @@ Output: 0
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.1 MB  
-**Submitted:** 2026-09-29T12:02:38.351Z  
+**Runtime:** 3 ms (beats 15.90%)  
+**Memory:** 41.8 MB (beats 97.56%)  
+**Submitted:** 2026-09-29T12:16:10.780Z  
 
 ```cpp
 class Solution {
 public:
     int minSubArrayLen(int target, vector<int>& nums) {
-        int sum = nums[0];
-        int size = 99999999;
+        int sum = 0;
+        int size = nums.size()+1;
         int back = 0 , front = 0;
         while(front < nums.size()){
             sum += nums[front];
@@ -68,8 +68,7 @@ public:
             }
             front++;
         }
-        if(size == 99999999)
-        return 0;
+        if(size == nums.size()+1) return 0;
         else
         return size;
     }
