@@ -39,8 +39,8 @@ Explanation: You will always arrive at index 3 no matter what. Its maximum jump 
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 52.2 MB (beats 83.76%)  
-**Submitted:** 2026-08-07T05:51:10.152Z  
+**Memory:** 52.3 MB (beats 82.60%)  
+**Submitted:** 2026-10-04T02:28:08.226Z  
 
 ```cpp
 class Solution {
