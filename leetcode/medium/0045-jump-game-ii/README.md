@@ -44,8 +44,8 @@ Output: 2
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 20.4 MB (beats 96.86%)  
-**Submitted:** 2026-08-08T09:27:39.930Z  
+**Memory:** 20.4 MB (beats 95.96%)  
+**Submitted:** 2026-10-04T02:28:28.196Z  
 
 ```cpp
 class Solution {
