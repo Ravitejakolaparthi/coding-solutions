@@ -69,9 +69,9 @@ In total, 1 + 3 + 0 + 0 = 4 moves were used.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 21.8 MB (beats 27.52%)  
-**Submitted:** 2026-08-25T10:05:15.421Z  
+**Runtime:** 1 ms (beats 22.84%)  
+**Memory:** 21.9 MB (beats 28.98%)  
+**Submitted:** 2026-10-04T02:27:01.471Z  
 
 ```cpp
 class Solution {
