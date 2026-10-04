@@ -46,9 +46,9 @@ Output: []
 ## Solution
 
 **Language:** C++  
-**Runtime:** 3 ms (beats 1.53%)  
-**Memory:** 14 MB (beats 8.97%)  
-**Submitted:** 2026-07-07T00:32:47.759Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 13.9 MB (beats 7.22%)  
+**Submitted:** 2026-10-04T02:19:46.559Z  
 
 ```cpp
 /**
