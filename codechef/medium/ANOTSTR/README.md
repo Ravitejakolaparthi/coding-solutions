@@ -72,7 +72,7 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T16:26:39.384Z  
+**Submitted:** 2026-10-07T16:23:35.568Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -88,7 +88,7 @@ int main()
         string s2;
         cin >> s1;
         cin >> s2;
-       int i = 0,j = 1;
+       int i = 0,j = 0;
         while (i < n) {
         	while(s1[i] != s2[i] && j < n){
         			if(s1[i] == s1[j]){
@@ -101,7 +101,6 @@ int main()
         			j++;
         	}
         	i++;
-        	j = i+1;
         }
         int flag = 0;
         for(int i = 0;i<n;i++){
