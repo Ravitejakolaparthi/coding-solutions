@@ -80,7 +80,7 @@ YES
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:18:11.382Z  
+**Submitted:** 2026-10-07T15:12:59.924Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -101,14 +101,15 @@ int main()
             if(s[i] == 'L') l++;
             if(s[i] == 'R') r++;
         }
-        if(abs(u-d) == 2 && abs(l-r) == 0){
-            cout << "yes\n";
+        if(u == d && r == l)
+        {
+            cout << "No\n";
         }
-        else if(abs(l-r) == 2 && abs(u-d) == 0){
-            cout << "Yes\n";
+        else if(abs(u-d) >= 1 && abs(r-l) >= 1){
+            cout << "No\n";
         }
         else{
-            cout << "No\n";
+            cout << "Yes\n";
         }
     }
     return 0;
