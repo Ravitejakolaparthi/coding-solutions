@@ -72,7 +72,7 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:51:44.796Z  
+**Submitted:** 2026-10-07T15:52:25.877Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -96,9 +96,9 @@ int main()
             s1o++;
         } for(int i = 0;i<n;i++){
             if(s2[i] == '0')
-            s1z++;
+            s2z++;
             else
-            s1o++;
+            s2o++;
         }
         if(s1z == s2z && s1o == s2o)
         cout << "yes\n";
