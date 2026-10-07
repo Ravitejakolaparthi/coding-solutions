@@ -72,7 +72,7 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T16:22:22.031Z  
+**Submitted:** 2026-10-07T16:18:18.352Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -88,17 +88,19 @@ int main()
         string s2;
         cin >> s1;
         cin >> s2;
-       int i = 0,j = 0;
+       
         while (i < n) {
-        	while(s1[i] != s2[i] && j < n){
+        	while(s1[i] != s2[i]){
         			if(s1[i] == s1[j]){
-        				swap(s1[j],s1[i]);
+        				swap(s1[j],s[i]);
         				if(s1[i] == 1) s1[i] = 0;
         				if(s1[i] == 0) s1[i] = 1;
-        				if(s1[j] == 1) s1[j] = 0;
-        				if(s1[j] == 0) s1[j] = 1;
+        				if(s1[j] == 1) s2[i] = 0;
+        				if(s1[j] == 0) s2[i] = 1;
         			}
+        			else{
         			j++;
+        			}
         	}
         	i++;
         }
