@@ -72,7 +72,7 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:47:51.873Z  
+**Submitted:** 2026-10-07T15:51:41.808Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -100,6 +100,10 @@ int main()
             else
             s1o++;
         }
+        if(s1z == s2z && s1o == s2o)
+        cout << "yes\n";
+        else
+        cout << "No\n";
     }
     return 0;
 }
