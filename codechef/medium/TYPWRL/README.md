@@ -62,14 +62,52 @@ abcdefghijklmnopqrstuvwxyz
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T14:46:04.650Z  
+**Submitted:** 2026-10-07T14:55:34.591Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 int main()
 {
-    
+    int t;
+    cin >> t;
+    while(t--){
+        int l,m;
+        cin >> l >> m;
+        string s1;
+        cin >> s1;
+        string s2;
+        cin >> s2;
+        map<char,int>mp;
+        for(int i = 0;i<m;i++){
+            mp[s2[i]]++;
+        }
+        int leftcnt = 0;
+        int rightcnt = 0;
+        int cnt = 0;
+        for(int i=0;i<l;i++){
+            if(mp.find(s1[i]) != mp.end()){
+               cnt++;
+            }else{
+                leftcnt = max(cnt,leftcnt);
+                cnt = 0;
+            }
+            leftcnt = max(cnt,leftcnt);
+        }
+        cnt = 0;
+         for(int i=0;i<l;i++){
+            if(mp.find(s1[i]) == mp.end()){
+               cnt++;
+            }else{
+
+                rightcnt = max(cnt,rightcnt);
+                cnt = 0;
+            }
+            rightcnt = max(cnt,rightcnt);
+        }
+        cout << max(leftcnt,rightcnt) <<endl;
+        
+    }   
     return 0;
 }
 ```
