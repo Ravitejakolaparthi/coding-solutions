@@ -11,28 +11,29 @@ int main()
         string s2;
         cin >> s1;
         cin >> s2;
-       
-while (i < n) {
-	while(s1[i] != s2[i]){
-			if(s1[i] == s1[j]){
-				swap(s1[j],s[i]);
-				if(s1[i] == 1) s1[i] = 0;
-				if(s1[i] == 0) s1[i] = 1;
-				if(s1[j] == 1) s2[i] = 0;
-				if(s1[j] == 0) s2[i] = 1;
-			}
-			else{
-			j++;
-			}
-	}
-	i++;
-}
-
+       int i = 0,j = 0;
+        while (i < n) {
+        	while(s1[i] != s2[i] && j < n){
+        			if(s1[i] == s1[j]){
+        				swap(s1[j],s1[i]);
+        				if(s1[i] == 1) s1[i] = 0;
+        				if(s1[i] == 0) s1[i] = 1;
+        				if(s1[j] == 1) s2[i] = 0;
+        				if(s1[j] == 0) s2[i] = 1;
+        			}
+        			j++;
+        	}
+        	i++;
         }
-        if(s1z == s2z && s1o == s2o)
-        cout << "yes\n";
-        else
-        cout << "No\n";
+        int flag = 0;
+        for(int i = 0;i<n;i++){
+            if(s1[i] != s2[i]){
+               flag = 1;
+            }
+        }
+        if(flag == 0) cout <<"yes\n";
+        else cout << "No\n";
+       
     }
     return 0;
 }
