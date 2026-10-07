@@ -72,50 +72,41 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T16:29:46.234Z  
+**Submitted:** 2026-10-07T16:57:53.607Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
-int main()
-{
+
+void solve() {
+    int n;
+    cin >> n;
+    string s1, s2;
+    cin >> s1 >> s2;
+
+    int count1_s1 = 0, count1_s2 = 0;
+    for (int i = 0; i < n; i++) {
+        if (s1[i] == '1') count1_s1++;
+        if (s2[i] == '1') count1_s2++;
+    }
+
+  if (count1_s1 % 2 == count1_s2% 2) {
+        cout << "YES\n";
+    } else {
+        cout << "NO\n";
+    }
+}
+
+int main() {
+    
     int t;
     cin >> t;
-    while(t--){
-        int n;
-        cin >> n;
-        string s1;
-        string s2;
-        cin >> s1;
-        cin >> s2;
-       int i = 0,j = 1;
-        while (i < n) {
-        	while(s1[i] != s2[i] && j < n){
-        			if(s1[i] == s1[j]){
-        				swap(s1[j],s1[i]);
-        				if(s1[i] == '1') s1[i] = '0';
-        				if(s1[i] == '0') s1[i] = '1';
-        				if(s1[j] == '1') s1[j] = '0';
-        				if(s1[j] == '0') s1[j] = '1';
-        			}
-        			else
-        			j++;
-        	}
-        	i++;
-        	j = i+1;
-        }
-        int flag = 0;
-        for(int i = 0;i<n;i++){
-            if(s1[i] != s2[i]){
-               flag = 1;
-            }
-        }
-        if(flag == 0) cout <<"yes\n";
-        else cout << "No\n";
-       
+    while (t--) {
+        solve();
     }
     return 0;
 }
+
 ```
 
 ---
