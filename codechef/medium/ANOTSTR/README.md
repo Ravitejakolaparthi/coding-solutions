@@ -72,7 +72,7 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:52:11.606Z  
+**Submitted:** 2026-10-07T16:15:43.933Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -88,17 +88,23 @@ int main()
         string s2;
         cin >> s1;
         cin >> s2;
-        int s1z=0,s1o=0,s2z=0,s2o=0;
-        for(int i = 0;i<n;i++){
-            if(s1[i] == '0')
-            s1z++;
-            else
-            s1o++;
-        } for(int i = 0;i<n;i++){
-            if(s2[i] == '0')
-            s2z++;
-            else
-            s2o++;
+       
+while (i < n) {
+	while(s1[i] != s2[i]){
+			if(s1[i] == s1[j]){
+				swap(s1[j],s[i]);
+				if(s1[i] == 1) s1[i] = 0;
+				if(s1[i] == 0) s1[i] = 1;
+				if(s1[j] == 1) s2[i] = 0;
+				if(s1[j] == 0) s2[i] = 1;
+			}
+			else{
+			j++;
+			}
+	}
+	i++;
+}
+
         }
         if(s1z == s2z && s1o == s2o)
         cout << "yes\n";
