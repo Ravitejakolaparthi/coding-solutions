@@ -23,6 +23,10 @@ int main()
             else
             s1o++;
         }
+        if(s1z == s2z && s1o == s2o)
+        cout << "yes\n";
+        else
+        cout << "No\n";
     }
     return 0;
 }
