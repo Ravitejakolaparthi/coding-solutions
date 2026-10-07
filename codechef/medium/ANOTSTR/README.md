@@ -72,7 +72,7 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T16:26:58.907Z  
+**Submitted:** 2026-10-07T16:29:46.234Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -98,6 +98,7 @@ int main()
         				if(s1[j] == '1') s1[j] = '0';
         				if(s1[j] == '0') s1[j] = '1';
         			}
+        			else
         			j++;
         	}
         	i++;
