@@ -72,14 +72,23 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:43:45.885Z  
+**Submitted:** 2026-10-07T15:45:28.881Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 int main()
 {
-    
+    int t;
+    cin >> t;
+    while(t--){
+        int n;
+        cin >> n;
+        string s1;
+        string s2;
+        cin >> s1;
+        cin >> s2;
+    }
     return 0;
 }
 ```
