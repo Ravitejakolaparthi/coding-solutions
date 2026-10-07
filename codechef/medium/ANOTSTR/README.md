@@ -72,14 +72,35 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:40:31.890Z  
+**Submitted:** 2026-10-07T15:47:51.873Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 int main()
 {
-    
+    int t;
+    cin >> t;
+    while(t--){
+        int n;
+        cin >> n;
+        string s1;
+        string s2;
+        cin >> s1;
+        cin >> s2;
+        int s1z=0,s1o=0,s2z=0,s2o=0;
+        for(int i = 0;i<n;i++){
+            if(s1[i] == '0')
+            s1z++;
+            else
+            s1o++;
+        } for(int i = 0;i<n;i++){
+            if(s2[i] == '0')
+            s1z++;
+            else
+            s1o++;
+        }
+    }
     return 0;
 }
 ```
