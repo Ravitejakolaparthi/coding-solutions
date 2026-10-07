@@ -80,7 +80,7 @@ YES
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:18:07.292Z  
+**Submitted:** 2026-10-07T15:18:11.382Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
