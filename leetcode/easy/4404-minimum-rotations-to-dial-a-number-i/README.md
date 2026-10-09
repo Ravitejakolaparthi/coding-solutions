@@ -69,8 +69,8 @@ The total is `1 + 1 + 2 + 0 + 2 + 1 + 1 + 2 + 2 + 0 = 12`, which is the minimum 
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 8.7 MB (beats 57.14%)  
-**Submitted:** 2026-10-04T02:53:45.569Z  
+**Memory:** 8.6 MB (beats 94.86%)  
+**Submitted:** 2026-10-09T05:54:17.327Z  
 
 ```cpp
 class Solution {
@@ -103,6 +103,7 @@ public:
             rounds += min(clockwise,anticlockwise);
             curr = dail;
             // 0 1 2 3 4 5 6 7 8 9
+                            
         }               
         return rounds;
     }
